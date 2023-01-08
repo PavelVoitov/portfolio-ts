@@ -1,7 +1,7 @@
 import React from "react";
 import {Button} from "../button/Button";
-import c from '../common/styles/Container.module.css'
-import s from './conditionsContainer.module.css'
+import c from '../common/styles/Container.module.scss'
+import s from './conditionsContainer.module.scss'
 
 export const Conditions = () => {
     return (

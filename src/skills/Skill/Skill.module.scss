@@ -1,0 +1,26 @@
+@import "../../common/styles/sass/variables";
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  padding: 10px 5px 10px 5px;
+  margin: 10px 0 50px 0;
+
+  .description {
+    width: 80%;
+    color: $textColor;
+    @media only screen and (max-width: 550px) and (min-width: 0px) {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 550px) and (min-width: 0px) {
+    width: 250px;
+  }
+}
+
+

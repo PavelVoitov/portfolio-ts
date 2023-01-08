@@ -1,0 +1,25 @@
+@import "../common/styles/sass/variables";
+.conditions {
+    display: flex;
+    /*height: 100%;*/
+    background-color: $bgSecondColor;
+    color: #00d3bc;
+    .conditionsContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .text {
+            text-transform: uppercase;
+            font-size: 25px;
+            text-align: center;
+            margin: 30px;
+        }
+    }
+}
+
+
+

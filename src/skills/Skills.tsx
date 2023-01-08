@@ -1,13 +1,14 @@
 import React from 'react'
-import react from '../common/images/react_logo.png'
-import js from '../common/images/JS.png'
-import ts from '../common/images/typescript.png'
-import html from '../common/images/html.png'
-import css from '../common/images/css.png'
-import git from '../common/images/Git.png'
-import s from './Skills.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import react from '../assets/images/react_logo.png'
+import js from '../assets/images/JS.png'
+import ts from '../assets/images/typescript.png'
+import html from '../assets/images/html.png'
+import css from '../assets/images/css.png'
+import git from '../assets/images/Git.png'
+import s from './Skills.module.scss'
+import styleContainer from '../common/styles/Container.module.scss'
 import {Skill} from "./Skill/Skill";
+import {Title} from "../common/components/title/Title";
 
 const skills = [
     {
@@ -47,7 +48,7 @@ export const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <h2 className={s.title}>Skills</h2>
+                <Title title={'skills'}/>
                 <div className={s.skills}>
                     {skills.map(el => {
                         return <Skill title={el.title} description={el.description} img={el.img}/>

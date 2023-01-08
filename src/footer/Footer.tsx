@@ -1,9 +1,9 @@
 import React from 'react'
-import s from './Footer.module.css'
-import telegram from '../common/images/telegram.png'
-import facebook from '../common/images/facebook.png'
-import instagram from '../common/images/instagram.png'
-import linkedin from '../common/images/linkedin.png'
+import s from './Footer.module.scss'
+import telegram from '../assets/images/telegram.png'
+import facebook from '../assets/images/facebook.png'
+import instagram from '../assets/images/instagram.png'
+import linkedin from '../assets/images/linkedin.png'
 
 
 export const Footer = () => {

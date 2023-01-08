@@ -1,5 +1,5 @@
 import React from "react";
-import c from './Skill.module.css'
+import c from './Skill.module.scss'
 
 type SkillPropsType = {
     title: string
@@ -10,8 +10,8 @@ type SkillPropsType = {
 export const Skill = ({title, img, description}: SkillPropsType) => {
     return (
         <div className={c.skill}>
-            <div className={c.icon}>
-                <img src={img} alt=""/>
+            <div>
+                <img src={img} alt="skill-icon"/>
             </div>
             <h3>{title}</h3>
             <div className={c.description}>

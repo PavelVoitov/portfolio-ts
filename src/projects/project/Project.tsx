@@ -1,5 +1,5 @@
 import React from "react";
-import c from './Work.module.css'
+import c from './Project.module.scss'
 import {Button} from "../../button/Button";
 
 type WorkPropsType = {
@@ -8,16 +8,19 @@ type WorkPropsType = {
     img: string
 }
 
-export const Work = ({title, description, img}: WorkPropsType) => {
+export const Project = ({title, description, img}: WorkPropsType) => {
+    const backgroundImage = {
+        backgroundImage: `url(${img})`
+    }
     return (
         <>
-            <div className={c.work}>
-                <div className={c.workImage} style={{backgroundImage: `url(${img})`}}>
+            <div className={c.project}>
+                <div className={c.projectImage} style={backgroundImage}>
                     <Button title={'Site'}>
-                        works
+                        projects
                     </Button>
                     <Button title={'Code'}>
-                        works
+                        projects
                     </Button>
                 </div>
                 <div className={c.textBlock}>

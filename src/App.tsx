@@ -1,9 +1,9 @@
-import './App.css';
+import './App.scss';
 import {Conditions} from "./conditions/Conditions";
 import {Header} from "./header/Header";
 import {Main} from "./main/Main";
 import {Skills} from "./skills/Skills";
-import {Works} from "./works/Works";
+import {Projects} from "./projects/Projects";
 import {ContactForm} from "./contactForm/ContactForm";
 import {Footer} from "./footer/Footer";
 
@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Main />
         <Skills />
-        <Works />
+        <Projects />
         <Conditions />
         <ContactForm />
         <Footer />

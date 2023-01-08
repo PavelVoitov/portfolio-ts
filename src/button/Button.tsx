@@ -4,11 +4,12 @@ import s from './Button.module.css'
 type ButtonPropsType = {
     title: string
     children?: ReactNode
+    type?: "button" | "submit" | "reset" | undefined
 }
 
 export const Button = (props: ButtonPropsType) => {
     return (
-        <button className={props.children === 'works' ? s.works : s.default}>
+        <button type={props.type} className={props.children === 'projects' ? s.projects : s.default}>
             {props.title}
         </button>
     )
