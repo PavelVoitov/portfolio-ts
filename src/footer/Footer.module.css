@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.iconsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.name {
+    color: #00d3bc;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin: 30px;
+}
+
+.span {
+    margin: 30px;
+    color: #00d3bc;
+}
+
+.iconsContainer a {
+    margin: 40px;
+}
+
+@media only screen and (max-width: 1186px) and (min-width: 0px) {
+    .iconsContainer a {
+        margin: 5px;
+    }
+
+    .iconsContainer {
+        justify-content: center;
+        width: 100%;
+    }
+}
