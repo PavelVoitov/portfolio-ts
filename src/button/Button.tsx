@@ -1,5 +1,5 @@
 import React, {ReactNode} from "react";
-import s from './Button.module.css'
+import s from './Button.module.scss'
 
 type ButtonPropsType = {
     title: string

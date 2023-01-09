@@ -2,10 +2,10 @@
 
 .contactsBlock {
     display: flex;
-    /*height: 100%;*/
     background-color: $bgColor;
     color: $primaryColor;
   .contactsContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     .formBlock {
@@ -18,7 +18,7 @@
         align-items: center;
         margin-bottom: 20px;
         & input, textarea {
-          width: 60%;
+          width: 50%;
           color: #fdfdfd;
           display: block;
           background: none;
@@ -26,6 +26,9 @@
           margin-bottom: 20px;
           border: 1px solid rgba(255,255,255,.1);
           font-size: 14px;
+          @media only screen and (max-width: 680px) and (min-width: 0px) {
+            width: 75%;
+          }
         }
         & textarea{
           height: 15vh;

@@ -1,0 +1,18 @@
+
+@mixin button ($width, $height, $marginBottom, $marginTop,
+$backgroundColor, $color, $fontSize, $fontWeight, $border, $outline,
+$transition, $position, $z-index) {
+  width: $width;
+  height: $height;
+  margin-bottom: $marginBottom;
+  margin-top: $marginTop;
+  background-color: $backgroundColor;
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  border: $border;
+  outline: $outline;
+  transition: $transition;
+  position: $position;
+  z-index: $z-index;
+}

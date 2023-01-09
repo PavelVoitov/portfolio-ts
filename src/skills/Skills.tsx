@@ -51,7 +51,7 @@ export const Skills = () => {
                 <Title title={'skills'}/>
                 <div className={s.skills}>
                     {skills.map(el => {
-                        return <Skill title={el.title} description={el.description} img={el.img}/>
+                        return <Skill key={el.title} title={el.title} description={el.description} img={el.img}/>
                     })}
                 </div>
             </div>

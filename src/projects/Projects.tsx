@@ -34,7 +34,7 @@ export const Projects = () => {
                 <Title title={"projects"}/>
                 <div className={s.projects}>
                     {works.map(el => {
-                        return <Project title={el.title} description={el.description} img={el.img}/>
+                        return <Project key={el.title} title={el.title} description={el.description} img={el.img}/>
                     })}
                 </div>
             </div>
