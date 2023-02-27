@@ -1,5 +1,5 @@
-@import "../common/styles/sass/variables";
-@import "../common/styles/sass/mixins";
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
 
 .default {
   @include button(
@@ -13,9 +13,14 @@
 button:hover {
   background-color: #077065;
   color: #fdfdfd;
-  /*transition: 0.5s;*/
   outline: 1px solid #00d2bb;
   outline-offset: 3px;
+  &:active {
+    color: #fdfdfd;
+    background-color: #179119;
+    width: 90px;
+    transition: 1s ease;
+  }
 }
 
 .projects {

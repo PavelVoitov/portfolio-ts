@@ -1,7 +1,8 @@
 @import "../common/styles/sass/variables";
 .conditions {
     display: flex;
-    /*height: 100%;*/
+    position: relative;
+    z-index: 999;
     background-color: $bgSecondColor;
     color: #00d3bc;
     .conditionsContainer {

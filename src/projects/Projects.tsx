@@ -11,21 +11,26 @@ const works = [
     {
         title: "To-do list",
         description: "Web-application for every day on a week",
-        img: todolist
+        img: todolist,
+        siteLink: 'https://pavelvoitov.github.io/todolist-ts-01/',
+        codeLink: 'https://github.com/PavelVoitov/todolist-ts-01.git'
     },
     {
         title: "Social network",
         description: "Social network in 8-bit style",
-        img: socialNetwork
+        img: socialNetwork,
+        siteLink: 'https://pavelvoitov.github.io/8-bit/',
+        codeLink: 'https://github.com/PavelVoitov/8-bit.git'
     },
     {
         title: "Counter",
         description: "Educational application aimed at developing logic and improving skills",
-        img: counter
+        img: counter,
+        siteLink: 'https://pavelvoitov.github.io/counter/',
+        codeLink: 'https://github.com/PavelVoitov/counter.git'
     },
 
 ]
-
 
 export const Projects = () => {
     return (
@@ -34,7 +39,12 @@ export const Projects = () => {
                 <Title title={"projects"}/>
                 <div className={s.projects}>
                     {works.map(el => {
-                        return <Project key={el.title} title={el.title} description={el.description} img={el.img}/>
+                        return <Project key={el.title}
+                                        title={el.title}
+                                        description={el.description}
+                                        img={el.img}
+                                        siteLink={el.siteLink}
+                                        codeLink={el.codeLink}/>
                     })}
                 </div>
             </div>

@@ -1,7 +1,9 @@
 
 .headerBlock {
+  position: relative;
   width: 100%;
   background-color: black;
+  z-index: 999;
 
   .header {
     display: flex;

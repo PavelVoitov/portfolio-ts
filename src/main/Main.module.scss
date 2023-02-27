@@ -1,58 +1,69 @@
 @import "../common/styles/sass/variables";
 
 .mainBlock {
-    background: $bgColor;
-    .mainText {
-        text-align: center;
-        width: 600px;
-        color: $primaryColor;
-        margin-bottom: 20px;
-        .firstName {
-            text-transform: uppercase;
-            font-size: 150px;
-            margin: 0;
-            padding: 0;
-            line-height: 1.1;
-            color: transparent;
-            -webkit-text-stroke: 2px $primaryColor;
-            @media only screen and (max-width: 680px) and (min-width: 0px) {
-                    font-size: 65px;
-            }
-        }
-        .lastName {
-            text-transform: uppercase;
-            font-size: 150px;
-            margin: 0;
-            padding: 0;
-            line-height: 1.1;
-            @media only screen and (max-width: 680px) and (min-width: 0px) {
-                    font-size: 50px;
-            }
-        }
-        @media only screen and (max-width: 1516px) and (min-width: 680px) {
-                margin-left: auto;
-                margin-right: auto;
-        }
-        @media only screen and (max-width: 680px) and (min-width: 0px) {
-                width: 200px;
-                margin-left: auto;
-                margin-right: auto;
-        }
+  background: $bgColor;
+
+  .mainText {
+    text-align: center;
+    width: 600px;
+    color: $primaryColor;
+    margin-bottom: 20px;
+    z-index: 1;
+
+    .spanFontSize {
+      font-size: 20px;
     }
-    .mainPhoto {
-        height: 100%;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        @media only screen and (max-width: 1516px) and (min-width: 680px) {
-                margin-left: auto;
-                margin-right: auto;
-        }
-        @media only screen and (max-width: 680px) and (min-width: 0px) {
-                margin-left: auto;
-                margin-right: auto;
-            img {
-                width: 300px;
-            }
-        }
+
+    .firstName {
+      text-transform: uppercase;
+      font-size: 150px;
+      margin: 0;
+      padding: 0;
+      line-height: 1.1;
+      color: transparent;
+      -webkit-text-stroke: 2px $primaryColor;
+      @media only screen and (max-width: 680px) and (min-width: 0px) {
+        font-size: 65px;
+      }
     }
+
+    .lastName {
+      text-transform: uppercase;
+      font-size: 150px;
+      margin: 0;
+      padding: 0;
+      line-height: 1.1;
+      @media only screen and (max-width: 680px) and (min-width: 0px) {
+        font-size: 50px;
+      }
+    }
+
+    @media only screen and (max-width: 1516px) and (min-width: 680px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media only screen and (max-width: 680px) and (min-width: 0px) {
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .mainPhoto {
+    height: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    z-index: 3;
+    @media only screen and (max-width: 1516px) and (min-width: 680px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media only screen and (max-width: 680px) and (min-width: 0px) {
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        width: 300px;
+      }
+    }
+  }
 }

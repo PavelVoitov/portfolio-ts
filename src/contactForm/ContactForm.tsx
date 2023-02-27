@@ -1,7 +1,7 @@
 import React from "react";
 import styleContainer from '../common/styles/Container.module.scss'
 import s from './ContactForm.module.scss'
-import {Button} from "../button/Button";
+import {Button} from "../common/components/button/Button";
 import {Title} from "../common/components/title/Title";
 
 
