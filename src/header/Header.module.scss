@@ -1,9 +1,19 @@
 
+.visible {
+  top: 0;
+  transition: top 0.5s ease-out;
+}
+
+.hidden {
+  top: -80px;
+  transition: top 0.5s ease-out;
+}
+
 .headerBlock {
-  position: relative;
+  position: fixed;
   width: 100%;
   background-color: black;
-  z-index: 999;
+  z-index: 2;
 
   .header {
     display: flex;

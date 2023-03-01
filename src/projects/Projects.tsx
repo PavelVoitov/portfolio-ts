@@ -34,7 +34,7 @@ const works = [
 
 export const Projects = () => {
     return (
-        <div className={s.projectsBlock}>
+        <div id={'projects'} className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <Title title={"projects"}/>
                 <div className={s.projects}>
