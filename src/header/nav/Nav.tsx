@@ -5,18 +5,42 @@ import {Link} from "react-scroll";
 export const Nav = () => {
 	return (
 		<div className={s.nav}>
-			<a href="">Home</a>
-			<a href="portfolio/src/header/nav/Nav">Skills</a>
-			<Link to="projects"
+			<Link to="main"
+						activeClass={s.active}
 						spy={true}
 						smooth={true}
 						offset={-100}
 						duration={2000}
-						style={{cursor: "pointer"}}>
+						className={s.link}>
+				Home
+			</Link>
+			<Link to="skills"
+						activeClass={s.active}
+						spy={true}
+						smooth={true}
+						offset={-100}
+						duration={2000}
+						className={s.link}>
+				Skills
+			</Link>
+			<Link to="projects"
+						activeClass={s.active}
+						spy={true}
+						smooth={true}
+						offset={-100}
+						duration={2000}
+						className={s.link}>
 				Project
 			</Link>
-			{/*<a href="#projects">Project</a>*/}
-			<a href="portfolio/src/header/nav/Nav">Contact</a>
+			<Link to="contactForm"
+						activeClass={s.active}
+						spy={true}
+						smooth={true}
+						offset={100}
+						duration={2000}
+						className={s.link}>
+				Contact
+			</Link>
 		</div>
 	)
 }

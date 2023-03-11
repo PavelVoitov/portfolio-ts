@@ -14,7 +14,7 @@ export const Main = () => {
 	}, [])
 
 	return (
-		<div className={s.mainBlock}>
+		<div id={'main'} className={s.mainBlock}>
 			<Particles options={{
 				particles: {
 					color: {
