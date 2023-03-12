@@ -3,7 +3,7 @@ import s from './BurgerNav.module.scss'
 import {Link} from "react-scroll";
 
 export const BurgerNav = () => {
-const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
+	const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
 
 	const onClickBurgerMenu = () => {
 		setIsOpenMenu(!isOpenMenu)
@@ -49,7 +49,13 @@ const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
 					Contact
 				</Link>
 			</div>
-			<div onClick={onClickBurgerMenu} className={s.burgerBtn}></div>
+			<div onClick={onClickBurgerMenu}
+					 className={!isOpenMenu ? s.burgerBtn : `${s.burgerBtn} ${s.change}`}
+			>
+				<div className={s.bar1}></div>
+				<div className={s.bar2}></div>
+				<div className={s.bar3}></div>
+			</div>
 		</div>
 	)
 }

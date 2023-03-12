@@ -1,8 +1,7 @@
 @import "../../common/styles/sass/variables";
 
 .burgerNav {
-  width: 80vw;
-  border: 1px solid;
+  width: 120vw;
   justify-content: space-between;
   height: 100%;
 
@@ -16,7 +15,7 @@
     background-color: $bgSecondColor;
     width: 100vw;
     padding-bottom: 0;
-    padding-left: 20px;
+    padding-left: 40px;
     transform: translate(0, -200px);
     transition: 0.7s;
 
@@ -45,7 +44,38 @@
     height: 30px;
     background-color: #00d2bb;
     top: 24px;
-    right: 20px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid $textColor;
+
+    .bar1, .bar2, .bar3 {
+      cursor: pointer;
+      width: 20px;
+      height: 3px;
+      background-color: #333;
+      margin: 1px;
+      transition: 0.2s;
+    }
+  }
+
+  .change .bar1 {
+    position: absolute;
+    transform: rotate(-45deg);
+    //translate(-3px, 3px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    position: absolute;
+    transform: rotate(45deg);
+    //translate(-5px, -3px);
   }
 
   @media screen and (min-width: 400px) {
