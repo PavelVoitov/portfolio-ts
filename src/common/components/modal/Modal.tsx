@@ -13,11 +13,13 @@ export const Modal = ({handleClose}: Props) => {
 					<div className={s.btnClose} onClick={() => handleClose()}>⨉</div>
 				</div>
 				<div className={s.textModalBlock}>
-					<div><h3>Your message sent!</h3></div>
+					<div>
+						<h3>Your message sent!</h3>
+					</div>
 					<div className={s.modalMessage}>
 						Thank you! I will get back in touch with you soon!
 						<div>
-							<b>Have a great day!</b>
+							<b className={s.modalMessage}>Have a great day!</b>
 						</div>
 					</div>
 					<SuccessAnimation />

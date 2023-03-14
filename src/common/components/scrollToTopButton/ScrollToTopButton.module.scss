@@ -1,0 +1,50 @@
+@import "./src/common/styles/sass/variables";
+
+.top_to_btm{
+    position: relative;
+
+.icon_position{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 20;
+    opacity: 0;
+
+    @media only screen and (max-width: 680px) and (min-width: 0px) {
+        bottom: 20px;
+        right: 15px;
+    }
+}
+.icon_style{
+    background-color: $primaryColor;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    color: #fff;
+    cursor: pointer;
+    animation: movebtn 3s ease-in-out infinite;
+    transition: all 5s ease-in-out;
+    opacity: 0.7;
+
+    &:hover{
+        animation: none;
+        background: #fff;
+        color: $primaryColor;
+        border: 2px solid $primaryColor;
+        opacity: 0.7;
+    }
+}
+
+@keyframes movebtn {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+}

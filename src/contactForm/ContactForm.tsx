@@ -6,6 +6,8 @@ import {Title} from "../common/components/title/Title";
 import axios from "axios";
 import {Modal} from "../common/components/modal/Modal";
 import {useFormik} from "formik";
+import {Simulate} from "react-dom/test-utils";
+import input = Simulate.input;
 
 type FormikErrorType = {
 	name?: string
@@ -15,6 +17,7 @@ type FormikErrorType = {
 
 export const ContactForm = () => {
 	const [isOpenModal, setIsOpenModal] = useState(false)
+	const [disableButton, setDisableButton] = useState(false)
 
 	const formik = useFormik({
 		initialValues: {
@@ -43,17 +46,25 @@ export const ContactForm = () => {
 		},
 
 		onSubmit: values => {
+			setDisableButton(true)
+			document.body.style.overflow = 'hidden';
 			axios.post('https://portfolio-gmail-smtp-topaz.vercel.app/sendMessage', values)
 				.then(() => {
 					setIsOpenModal(true)
 				})
 			formik.resetForm()
+			setTimeout(() => {
+				setIsOpenModal(false)
+				setDisableButton(false)
+				document.body.style.overflow = 'unset';
+			}, 5000)
 		},
 	})
 
 	const handleClose = () => {
 		setIsOpenModal(false)
 	}
+
 
 	return (
 		<div id={'contactForm'} className={s.contactsBlock}>
@@ -62,13 +73,39 @@ export const ContactForm = () => {
 				<Title title={'contacts'}/>
 				<div className={s.formBlock}>
 					<form className={s.form} onSubmit={formik.handleSubmit}>
-						<input type='text' placeholder='Name' {...formik.getFieldProps("name")}/>
-						{formik.errors.name ? <p style={{color: "red"}}>{formik.errors.name}</p> : ''}
-						<input type='text' placeholder='Email' {...formik.getFieldProps("email")}/>
-						{formik.errors.email ? <div style={{color: "red"}}>{formik.errors.email}</div> : ''}
-						<textarea placeholder='Your massage...' {...formik.getFieldProps("message")}/>
-						{formik.errors.message ? <div style={{color: "red"}}>{formik.errors.message}</div> : ''}
-						<Button type={'submit'} title={'Send'}/>
+						<>
+							{formik.errors.name && formik.touched.name
+								? <div className={s.errorField}>{formik.errors.name}</div>
+								: <div style={{height: 10, paddingBottom: 7}}></div>}
+							<input
+								type='text'
+								placeholder='Name'
+								{...formik.getFieldProps("name")}
+								className={formik.errors.name && formik.touched.name ? s.error : ''}
+							/>
+						</>
+						<>
+							{formik.errors.email && formik.touched.email
+								? <div className={s.errorField}>{formik.errors.email}</div>
+								: <div style={{height: 10, paddingBottom: 7}}></div>}
+							<input
+								type='text'
+								placeholder='Email'
+								{...formik.getFieldProps("email")}
+								className={formik.errors.email && formik.touched.email ? s.error : ''}
+							/>
+						</>
+						<>
+							{formik.errors.message && formik.touched.message
+								? <div className={s.errorField}>{formik.errors.message}</div>
+								: <div style={{height: 10, paddingBottom: 7}}></div>}
+							<textarea
+								placeholder='Your massage...'
+								{...formik.getFieldProps("message")}
+								className={formik.errors.message && formik.touched.message ? s.error : ''}
+							/>
+						</>
+						<Button type={'submit'} title={'Send'} disable={disableButton}/>
 					</form>
 				</div>
 			</div>

@@ -6,6 +6,8 @@ import {Projects} from "./projects/Projects";
 import {ContactForm} from "./contactForm/ContactForm";
 import {Footer} from "./footer/Footer";
 import {Header} from './header/Header';
+import {ScrollToTop} from "./common/components/scrollToTopButton/ScrollToTopButton";
+
 
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
 			<Conditions/>
 			<ContactForm/>
 			<Footer/>
+			<ScrollToTop/>
 		</div>
 	);
 }
