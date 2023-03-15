@@ -1,0 +1,15 @@
+.alice-carousel__dots-item.__active{
+    background: #00d3bc !important;
+}
+
+.alice-carousel__dots-item {
+    background: #fff !important;
+}
+
+.alice-carousel__next-btn-item {
+    color: #00d3bc !important;
+}
+
+.alice-carousel__prev-btn-item {
+    color: #00d3bc !important;
+}

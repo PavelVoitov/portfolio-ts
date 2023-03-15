@@ -1,53 +1,41 @@
 import React from "react";
-import s from "./projects.module.scss"
+import s from './Projects.module.scss'
 import {Project} from "./project/Project"
 import styleContainer from "../common/styles/Container.module.scss"
-import todolist from "../assets/images/todolist.png"
-import socialNetwork from "../assets/images/socialnetworks.png"
-import counter from "../assets/images/counter.png"
-import {Title} from "../common/components/title/Title";
+import {Title} from "../common/components/title/Title"
+import {projects} from "./dataProjects"
+import AliceCarousel from "react-alice-carousel";
+import "../../src/common/styles/carousel.css";
+import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
-const works = [
-    {
-        title: "To-do list",
-        description: "Web-application for every day on a week",
-        img: todolist,
-        siteLink: 'https://pavelvoitov.github.io/todolist-ts-01/',
-        codeLink: 'https://github.com/PavelVoitov/todolist-ts-01.git'
-    },
-    {
-        title: "Social network",
-        description: "Social network in 8-bit style",
-        img: socialNetwork,
-        siteLink: 'https://pavelvoitov.github.io/8-bit/',
-        codeLink: 'https://github.com/PavelVoitov/8-bit.git'
-    },
-    {
-        title: "Counter",
-        description: "Educational application aimed at developing logic and improving skills",
-        img: counter,
-        siteLink: 'https://pavelvoitov.github.io/counter/',
-        codeLink: 'https://github.com/PavelVoitov/counter.git'
-    },
-
-]
+const responsive = {
+	0: { items: 1 },
+	568: { items: 2 },
+	1024: { items: 3 },
+};
 
 export const Projects = () => {
-    return (
-        <div id={'projects'} className={s.projectsBlock}>
-            <div className={`${styleContainer.container} ${s.projectsContainer}`}>
-                <Title title={"projects"}/>
-                <div className={s.projects}>
-                    {works.map(el => {
-                        return <Project key={el.title}
-                                        title={el.title}
-                                        description={el.description}
-                                        img={el.img}
-                                        siteLink={el.siteLink}
-                                        codeLink={el.codeLink}/>
-                    })}
-                </div>
-            </div>
-        </div>
-    )
+	return (
+		<div id={'projects'} className={s.projectsBlock}>
+			<div className={`${styleContainer.container} ${s.projectsContainer}`}>
+				<Title title={"projects"}/>
+				<div className={s.projects}>
+					<AliceCarousel
+						controlsStrategy={"alternate"}
+						responsive={responsive}
+						mouseTracking={true}
+					>
+						{projects.map(el => {
+							return <Project key={el.title}
+															title={el.title}
+															description={el.description}
+															img={el.img}
+															siteLink={el.siteLink}
+															codeLink={el.codeLink}/>
+						})}
+						</AliceCarousel>
+				</div>
+			</div>
+		</div>
+	)
 }

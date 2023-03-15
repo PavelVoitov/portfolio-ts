@@ -16,7 +16,7 @@ export const Project = ({title, description, img, siteLink, codeLink}: WorkProps
 		backgroundImage: `url(${img})`
 	}
 	return (
-		<>
+		<div>
 			<div className={c.project}>
 				<div className={c.projectImage} style={backgroundImage}>
 					<Button title={'Site'} onClick={() => {
@@ -37,6 +37,6 @@ export const Project = ({title, description, img, siteLink, codeLink}: WorkProps
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
