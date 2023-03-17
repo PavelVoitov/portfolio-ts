@@ -19,16 +19,16 @@ export const Project = ({title, description, img, siteLink, codeLink}: WorkProps
 		<div>
 			<div className={c.project}>
 				<div className={c.projectImage} style={backgroundImage}>
-					<Button title={'Site'} onClick={() => {
-						window.location.href = `${siteLink}`
+					{siteLink !== '' && <Button title={'Site'} onClick={() => {
+						window.open(siteLink)
 					}}>
 						projects
-					</Button>
-					<Button title={'Code'} onClick={() => {
-						window.location.href = `${codeLink}`
+					</Button>}
+					{codeLink !== '' && <Button title={'Code'} onClick={() => {
+						window.open(codeLink)
 					}}>
 						projects
-					</Button>
+					</Button>}
 				</div>
 				<div className={c.textBlock}>
 					<h3>{title}</h3>

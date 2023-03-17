@@ -19,6 +19,12 @@ export const ContactForm = () => {
 	const [isOpenModal, setIsOpenModal] = useState(false)
 	const [disableButton, setDisableButton] = useState(false)
 
+	const modalClosed = () => {
+		setIsOpenModal(false)
+		setDisableButton(false)
+		document.body.style.overflow = 'unset';
+	}
+
 	const formik = useFormik({
 		initialValues: {
 			name: '',
@@ -45,6 +51,7 @@ export const ContactForm = () => {
 			return errors
 		},
 
+
 		onSubmit: values => {
 			setDisableButton(true)
 			document.body.style.overflow = 'hidden';
@@ -54,15 +61,13 @@ export const ContactForm = () => {
 				})
 			formik.resetForm()
 			setTimeout(() => {
-				setIsOpenModal(false)
-				setDisableButton(false)
-				document.body.style.overflow = 'unset';
-			}, 5000)
+				modalClosed()
+			}, 8000)
 		},
 	})
 
 	const handleClose = () => {
-		setIsOpenModal(false)
+		modalClosed()
 	}
 
 

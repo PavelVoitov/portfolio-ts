@@ -21,7 +21,7 @@ export const Projects = () => {
 				<Title title={"projects"}/>
 				<div className={s.projects}>
 					<AliceCarousel
-						controlsStrategy={"alternate"}
+						controlsStrategy={"responsive"}
 						responsive={responsive}
 						mouseTracking={true}
 					>

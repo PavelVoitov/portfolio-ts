@@ -36,7 +36,7 @@ export const Nav = () => {
 						activeClass={s.active}
 						spy={true}
 						smooth={true}
-						offset={100}
+						offset={-50}
 						duration={2000}
 						className={s.link}>
 				Contact
