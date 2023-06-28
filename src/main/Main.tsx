@@ -60,7 +60,6 @@ export const Main = () => {
 						<img src={photo} alt="my photo" style={{borderRadius: 10, borderStyle: "inset"}}/>
 						</Tilt>
 					</div>
-
 			</div>
 		</div>
 	)

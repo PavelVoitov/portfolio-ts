@@ -12,7 +12,6 @@ export const Footer = () => {
     return (
         <div className={s.footer}>
             <div className={s.container}>
-                {/*<div className={s.name}>Pavel Voitov</div>*/}
                 <Title title={'Pavel Voitov'}/>
                 <div className={s.iconsContainer}>
                     <a href="https://t.me/voitov_pavel"><img src={telegram} alt="telegram"/></a>

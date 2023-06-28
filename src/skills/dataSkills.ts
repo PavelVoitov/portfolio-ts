@@ -4,6 +4,9 @@ import react from "../../src/assets/images/react_logo.png";
 import html from "../../src/assets/images/html.png";
 import css from "../../src/assets/images/css.png";
 import git from "../../src/assets/images/Git.png";
+import materialUi from "../../src/assets/images/material-ui.png";
+import redux from "../../src/assets/images/redux.png";
+import postman from "../../src/assets/images/postman.png";
 
 export const skills = [
 	{
@@ -27,7 +30,7 @@ export const skills = [
 		img: html
 	},
 	{
-		title: 'CSS',
+		title: 'CSS/SASS',
 		description: 'Using SCSS and SASS modules to style web pages. Understanding the basics, principles and rules of work. Flex and Grid technologies.',
 		img: css
 	},
@@ -36,4 +39,19 @@ export const skills = [
 		description: 'Working with online project hosting service. Joint development of SPA applications. Working with branches, merge, deploy.',
 		img: git
 	},
+	{
+		title: 'Material UI',
+		description: 'Utilizing Material-UI library for building responsive and visually appealing user interfaces.',
+		img: materialUi
+	},
+	{
+		title: 'REDUX/REDUX TOOLKIT',
+		description: 'Implementing Redux for state management in applications. Understanding actions, reducers, thunks to manage application state effectively.',
+		img: redux
+	},
+	{
+		title: 'POSTMAN',
+		description: 'Using Postman to develop and test APIs. API design, testing and documentation. Working with various API protocols and additional features.',
+		img: postman
+	}
 ]

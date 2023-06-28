@@ -1,6 +1,6 @@
 import todolist from "../../src/assets/images/todolist.png";
 import socialNetwork from "../../src/assets/images/socialnetworks.png";
-import counter from "../../src/assets/images/counter.png";
+import cards from "../../src/assets/images/cardsFon.png";
 import citrinium from "../../src/assets/images/citrinium.png";
 
 export const projects = [
@@ -19,11 +19,11 @@ export const projects = [
 		codeLink: 'https://github.com/PavelVoitov/8-bit.git'
 	},
 	{
-		title: "Counter",
-		description: "Educational application aimed at developing logic and improving skills",
-		img: counter,
-		siteLink: 'https://pavelvoitov.github.io/counter/',
-		codeLink: 'https://github.com/PavelVoitov/counter.git'
+		title: "Education cards",
+		description: "SPA for fast and effective learning",
+		img: cards,
+		siteLink: 'https://arsen056.github.io/cards',
+		codeLink: 'https://github.com/arsen056/cards.git'
 	},
 	{
 		title: "Citrinium",
