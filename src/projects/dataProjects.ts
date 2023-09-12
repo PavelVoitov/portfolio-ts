@@ -2,10 +2,18 @@ import todolist from "../../src/assets/images/todolist.png";
 import socialNetwork from "../../src/assets/images/socialnetworks.png";
 import cards from "../../src/assets/images/cardsFon.png";
 import citrinium from "../../src/assets/images/citrinium.png";
+import peatCalculator from "../../src/assets/images/peat-calculator.png"
 
 export const projects = [
 	{
-		title: "To-do list",
+		title: "Peat calculator",
+		description: "Web application for calculating the proportions of peat in production and accounting for peat stored in warehouses.",
+		img: peatCalculator,
+		siteLink: 'https://pavelvoitov.github.io/peat-calculator/',
+		codeLink: 'https://github.com/PavelVoitov/peat-calculator.git'
+	},
+	{
+		title: "Task recorder",
 		description: "Web-application for every day on a week",
 		img: todolist,
 		siteLink: 'https://pavelvoitov.github.io/todolist-ts-01/',
