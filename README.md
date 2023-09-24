@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio repository! This repository hosts the code for my personal portfolio website.
 
-## Available Scripts
+## About the Project
 
-In the project directory, you can run:
+This portfolio website showcases my skills and provides links to my projects for your reference. It was developed using the following technologies:
 
-### `yarn start`
+- **React:** The entire frontend of the website is built using the React library, providing high flexibility and performance.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **TypeScript:** All the code is written using TypeScript to improve type safety and make maintenance easier.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Sass:** The website's styling is done using the Sass preprocessor, allowing for structured and easily customizable styles.
 
-### `yarn test`
+The backend for the email functionality is implemented in a separate repository, which you can find [here](https://github.com/PavelVoitov/portfolio-gmail-smtp.git).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Skills
 
-### `yarn build`
+Here is a list of skills and technologies I am proficient in:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML/CSS
+- JavaScript/TypeScript
+- React
+- Node.js
+- Express
+- Sass
+- Git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can always reach out to me through the following channels:
 
-### `yarn eject`
+- Email: your_email@gmail.com
+- LinkedIn: [your LinkedIn profile](https://www.linkedin.com/in/pavel-voitov/)
+- X (ex-Twitter): [@your_twitter_profile](https://x.com/pavel_voitov?t=xL5hyoZuhR0s7vc6-twB0g&s=09)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contact Form
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you prefer, you can also use the contact form available on my portfolio website to send me a message or inquire about potential collaborations. Simply visit the website, navigate to the contact section, and fill out the form.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Thank you for visiting my portfolio!
