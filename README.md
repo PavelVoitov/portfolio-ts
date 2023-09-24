@@ -30,9 +30,9 @@ Here is a list of skills and technologies I am proficient in:
 
 You can always reach out to me through the following channels:
 
-- Email: your_email@gmail.com
-- LinkedIn: [your LinkedIn profile](https://www.linkedin.com/in/pavel-voitov/)
-- X (ex-Twitter): [@your_twitter_profile](https://x.com/pavel_voitov?t=xL5hyoZuhR0s7vc6-twB0g&s=09)
+- Email: voitovpavelpost@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/pavel-voitov/)
+- [X (ex-Twitter)](https://x.com/pavel_voitov?t=xL5hyoZuhR0s7vc6-twB0g&s=09)
 
 ## Contact Form
 
