@@ -6,6 +6,8 @@ import {loadFull} from "tsparticles";
 import {Particles} from 'react-tsparticles';
 import {Zoom} from "react-awesome-reveal";
 import Tilt from 'react-parallax-tilt';
+import cv from '../assets/Pavel_Voitov_CV.pdf'
+import {Button} from "../common/components/button/Button";
 
 
 export const Main = () => {
@@ -53,6 +55,11 @@ export const Main = () => {
 						<Tilt tiltMaxAngleX={30} tiltMaxAngleY={30} transitionSpeed={5000}>
 							<span className={s.spanFontSize}>Frontend Developer</span>
 						</Tilt>
+						<a href={cv} download="Pavel_Voitov.pdf">
+							<Button title={'Download CV'}>
+								projects
+							</Button>
+						</a>
 					</Zoom>
 				</div>
 					<div className={s.mainPhoto}>

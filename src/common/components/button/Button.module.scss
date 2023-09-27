@@ -43,12 +43,14 @@ button:disabled {
 
 .projects {
   @include button(
-                  40%, 15%, 30px,
+                  160px, 50px, 30px,
                   20px, #525655, #00d2bb,
                   20px, normal, 1px solid #00d2bb,
                   5px solid transparent, .1s ease-in-out, relative,
                   1);
   opacity: 0.6;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 @media only screen and (max-width: 750px) and (min-width: 0px) {

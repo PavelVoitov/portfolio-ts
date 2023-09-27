@@ -1,15 +1,12 @@
-import React, {ReactNode} from "react";
+import React from "react";
 import s from './Button.module.scss'
-// import {LinkProps} from "react-router-dom";
 
 type ButtonPropsType = {
     title: string
-    children?: ReactNode
+    children?: string
     type?: "button" | "submit" | "reset"
     onClick?: () => void
     disable?: boolean
-    // component?:  React.ForwardRefExoticComponent<LinkProps & React.RefAttributes<HTMLAnchorElement>>
-    // to?: string
 }
 
 export const Button = (props: ButtonPropsType) => {
