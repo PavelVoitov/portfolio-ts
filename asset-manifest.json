@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio-ts/static/css/main.51053b10.css",
-    "main.js": "/portfolio-ts/static/js/main.0dd568e5.js",
+    "main.css": "/portfolio-ts/static/css/main.9ab08cc7.css",
+    "main.js": "/portfolio-ts/static/js/main.fb5a8d80.js",
     "static/js/787.6994c3f5.chunk.js": "/portfolio-ts/static/js/787.6994c3f5.chunk.js",
+    "static/media/Pavel_Voitov_CV.pdf": "/portfolio-ts/static/media/Pavel_Voitov_CV.135abd7eef563e3959ae.pdf",
     "static/media/photo.jpg": "/portfolio-ts/static/media/photo.fe157b396ad311c1c7e4.jpg",
     "static/media/citrinium.png": "/portfolio-ts/static/media/citrinium.d6319069f250b1e667b6.png",
     "static/media/peat-calculator.png": "/portfolio-ts/static/media/peat-calculator.bf13c231821973be0efa.png",
@@ -10,12 +11,12 @@
     "static/media/cardsFon.png": "/portfolio-ts/static/media/cardsFon.9bbea79de20f0d83a00a.png",
     "static/media/todolist.png": "/portfolio-ts/static/media/todolist.23784f531b8ed163a740.png",
     "index.html": "/portfolio-ts/index.html",
-    "main.51053b10.css.map": "/portfolio-ts/static/css/main.51053b10.css.map",
-    "main.0dd568e5.js.map": "/portfolio-ts/static/js/main.0dd568e5.js.map",
+    "main.9ab08cc7.css.map": "/portfolio-ts/static/css/main.9ab08cc7.css.map",
+    "main.fb5a8d80.js.map": "/portfolio-ts/static/js/main.fb5a8d80.js.map",
     "787.6994c3f5.chunk.js.map": "/portfolio-ts/static/js/787.6994c3f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51053b10.css",
-    "static/js/main.0dd568e5.js"
+    "static/css/main.9ab08cc7.css",
+    "static/js/main.fb5a8d80.js"
   ]
 }
