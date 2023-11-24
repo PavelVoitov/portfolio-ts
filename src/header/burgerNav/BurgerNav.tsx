@@ -37,7 +37,7 @@ export const BurgerNav = () => {
 							offset={-100}
 							duration={2000}
 							className={s.link}>
-					Project
+					Projects
 				</Link>
 				<Link to="contactForm"
 							activeClass={s.active}

@@ -1,7 +1,7 @@
 
 @mixin button ($width, $height, $marginBottom, $marginTop,
 $backgroundColor, $color, $fontSize, $fontWeight, $border, $outline,
-$transition, $position, $z-index) {
+$transition, $position, $z-index, $cursor) {
   width: $width;
   height: $height;
   margin-bottom: $marginBottom;
@@ -15,4 +15,5 @@ $transition, $position, $z-index) {
   transition: $transition;
   position: $position;
   z-index: $z-index;
+  cursor: $cursor;
 }

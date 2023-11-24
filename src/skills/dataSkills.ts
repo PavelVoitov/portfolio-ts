@@ -10,7 +10,7 @@ import postman from "../../src/assets/images/postman.png";
 
 export const skills = [
 	{
-		title: 'JavaScript',
+		title: 'JAVASCRIPT',
 		description: 'Data types. Cycles, conditions, work with objects. Functions. Prototypes and inheritance. Working with objects. Array methods.',
 		img: js
 	},
@@ -40,7 +40,7 @@ export const skills = [
 		img: git
 	},
 	{
-		title: 'Material UI',
+		title: 'MATERIAL UI',
 		description: 'Utilizing Material-UI library for building responsive and visually appealing user interfaces.',
 		img: materialUi
 	},

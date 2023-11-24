@@ -21,9 +21,11 @@ export const Projects = () => {
 				<Title title={"projects"}/>
 				<div className={s.projects}>
 					<AliceCarousel
-						controlsStrategy={"responsive"}
+						controlsStrategy={"alternate"}
 						responsive={responsive}
 						mouseTracking={true}
+						disableDotsControls={true}
+						infinite={true}
 					>
 						{projects.map(el => {
 							return <Project key={el.title}

@@ -24,7 +24,7 @@ export const Project = ({title, description, img, siteLink, codeLink}: WorkProps
 					}}>
 						projects
 					</Button>}
-					{codeLink !== '' && <Button title={'Code'} onClick={() => {
+					{codeLink !== '' && <Button title={'Source Code'} onClick={() => {
 						window.open(codeLink)
 					}}>
 						projects

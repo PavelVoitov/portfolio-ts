@@ -5,7 +5,6 @@ import facebook from '../assets/images/facebook.png'
 import instagram from '../assets/images/instagram.png'
 import linkedin from '../assets/images/linkedin.png'
 import {Title} from "../common/components/title/Title";
-import ReactTypingEffect from "react-typing-effect";
 
 
 export const Footer = () => {
@@ -23,12 +22,7 @@ export const Footer = () => {
 					<a href="https://www.linkedin.com/in/pavel-voitov/"><img src={linkedin} alt="linkedin"/></a>
 				</div>
 				<div className={s.span}>
-					<ReactTypingEffect text={'Created by Pavel Voitov'}
-														 speed={100}
-														 className={s.reactTypingEffect}
-														 staticText={`© ${currentYear}`}
-														 eraseSpeed={100}
-					/>
+					{`© ${currentYear}`} Created by Pavel Voitov
 				</div>
 			</div>
 		</div>
