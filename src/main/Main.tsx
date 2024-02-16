@@ -56,9 +56,7 @@ export const Main = () => {
 							<span className={s.spanFontSize}>Frontend Developer</span>
 						</Tilt>
 						<a href={cv} download="Pavel_Voitov.pdf">
-							<Button title={'Download CV'}>
-								projects
-							</Button>
+							<Button title={'Download CV'} type={"projects"}/>
 						</a>
 					</Zoom>
 				</div>

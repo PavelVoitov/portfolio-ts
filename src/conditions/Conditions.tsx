@@ -20,9 +20,7 @@ export const Conditions = () => {
 								offset={-50}
 								duration={1000}
 								className={s.link}>
-						<Button title={'Hire'}>
-							default
-						</Button>
+						<Button title={'Hire'} type={"default"}/>
 					</Link>
 			</div>
 		</div>

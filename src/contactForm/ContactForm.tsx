@@ -108,7 +108,7 @@ export const ContactForm = () => {
 								className={formik.errors.message && formik.touched.message ? s.error : ''}
 							/>
 						</>
-						<Button type={'submit'} title={'Send'} disable={disableButton}/>
+						<Button title={'Send'} disable={disableButton} type={"default"}/>
 					</form>
 				</div>
 			</div>

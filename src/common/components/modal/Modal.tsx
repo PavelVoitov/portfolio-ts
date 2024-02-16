@@ -10,7 +10,7 @@ export const Modal = ({handleClose}: Props) => {
 	return (
 			<section className={s.modal}>
 				<div className={s.flex}>
-					<div className={s.btnClose} onClick={() => handleClose()}>⨉</div>
+					<div className={s.btnClose} onClick={handleClose}>⨉</div>
 				</div>
 				<div className={s.textModalBlock}>
 					<div>
