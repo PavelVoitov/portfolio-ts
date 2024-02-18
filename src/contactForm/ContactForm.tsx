@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import styleContainer from '../common/styles/Container.module.scss'
 import s from './ContactForm.module.scss'
 import {Button} from "../common/components/button/Button";
 import {Title} from "../common/components/title/Title";
-import axios from "axios";
 import {Modal} from "../common/components/modal/Modal";
 import {useFormik} from "formik";
+import emailjs from '@emailjs/browser';
 
 type FormikErrorType = {
 	name?: string
@@ -16,7 +16,9 @@ type FormikErrorType = {
 export const ContactForm = () => {
 	const [isOpenModal, setIsOpenModal] = useState(false)
 	const [disableButton, setDisableButton] = useState(false)
+	const [error, setError] = useState<boolean>(false)
 
+	const form = useRef<any>()
 	const modalClosed = () => {
 		setIsOpenModal(false)
 		setDisableButton(false)
@@ -49,22 +51,34 @@ export const ContactForm = () => {
 			return errors
 		},
 
-
 		onSubmit: values => {
+			const serviceId: string = process.env.REACT_APP_SERVICE_ID ?? "";
+			const templateId: string = process.env.REACT_APP_TEMPLATE_ID ?? "";
 			setDisableButton(true)
 			document.body.style.overflow = 'hidden';
-			axios.post('https://portfolio-gmail-smtp-topaz.vercel.app/sendMessage', values)
-				.then(() => {
-					setIsOpenModal(true)
+			emailjs
+				.sendForm(serviceId, templateId, form.current, {
+					publicKey: process.env.REACT_APP_PUBLIC_KEY,
 				})
-			formik.resetForm()
+				.then(
+					() => {
+						setIsOpenModal(true)
+						formik.resetForm()
+					},
+					(error) => {
+						setError(true)
+						setIsOpenModal(true)
+						console.log(error)
+					},
+				);
 			setTimeout(() => {
 				modalClosed()
+				setError(false)
 			}, 8000)
 		},
 	})
 
-	const handleClose = () => {
+		const handleClose = () => {
 		modalClosed()
 	}
 
@@ -72,14 +86,14 @@ export const ContactForm = () => {
 	return (
 		<div id={'contactForm'} className={s.contactsBlock}>
 			<div className={`${styleContainer.container} ${s.contactsContainer}`}>
-				{isOpenModal ? <Modal handleClose={handleClose}/> : ''}
+				{isOpenModal ? <Modal handleClose={handleClose} error={error}/> : ''}
 				<Title title={'contact'}/>
 				<div className={s.formBlock}>
-					<form className={s.form} onSubmit={formik.handleSubmit}>
+					<form className={s.form} ref={form} onSubmit={formik.handleSubmit}>
 						<>
 							{formik.errors.name && formik.touched.name
 								? <div className={s.errorField}>{formik.errors.name}</div>
-								: <div style={{height: 10, paddingBottom: 7}}></div>}
+								: <div className={s.emptyErrorField}></div>}
 							<input
 								type='text'
 								placeholder='Name'
@@ -90,7 +104,7 @@ export const ContactForm = () => {
 						<>
 							{formik.errors.email && formik.touched.email
 								? <div className={s.errorField}>{formik.errors.email}</div>
-								: <div style={{height: 10, paddingBottom: 7}}></div>}
+								: <div className={s.emptyErrorField}></div>}
 							<input
 								type='text'
 								placeholder='Email'
@@ -101,7 +115,7 @@ export const ContactForm = () => {
 						<>
 							{formik.errors.message && formik.touched.message
 								? <div className={s.errorField}>{formik.errors.message}</div>
-								: <div style={{height: 10, paddingBottom: 7}}></div>}
+								: <div className={s.emptyErrorField}></div>}
 							<textarea
 								placeholder='Your massage...'
 								{...formik.getFieldProps("message")}

@@ -8,10 +8,10 @@ type ButtonPropsType = {
     disable?: boolean
 }
 
-export const Button = (props: ButtonPropsType) => {
+export const Button = ({title, onClick, disable, type}: ButtonPropsType) => {
     return (
-        <button className={props.type === 'projects' ? s.projects : s.default} onClick={props.onClick} disabled={props.disable}>
-            {props.title}
+        <button type={title === "Send" ? "submit" : "button"} className={type === 'projects' ? s.projects : s.default} onClick={onClick} disabled={disable}>
+            {title}
         </button>
     )
 }
