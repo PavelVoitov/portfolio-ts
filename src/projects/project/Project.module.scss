@@ -1,3 +1,5 @@
+@import "../../common/styles/sass/variables";
+
 .project {
     display: flex;
     flex-direction: column;
@@ -25,7 +27,6 @@
         &::before {
             position: absolute;
             content: "";
-            //background-color: black;
             top: 0;
             bottom: 0;
             left: 0;
@@ -37,7 +38,7 @@
         width: 100%;
         .description {
             width: 100%;
-            color: white;
+            color: $textColor;
             @media only screen and (max-width: 550px) and (min-width: 0px) {
                     width: 90%;
             }

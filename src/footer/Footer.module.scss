@@ -1,11 +1,10 @@
 @import "../common/styles/sass/variables";
 
-
 .footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: black;
+    background-color: $bgSecondColor;
     position: relative;
     z-index: 1;
 .container {

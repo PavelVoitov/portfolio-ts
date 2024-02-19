@@ -7,7 +7,7 @@ import {projects} from "./dataProjects"
 import AliceCarousel from "react-alice-carousel";
 import "../../src/common/styles/carousel.css";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
-import {ModalCarousel1} from "../modalCarousel/ModalCarousel1";
+import {ModalCarousel} from "../modalCarousel/ModalCarousel";
 
 const responsive = {
 	0: { items: 1 },
@@ -30,7 +30,7 @@ export const Projects = () => {
 	return (
 		<div id={'projects'} className={s.projectsBlock}>
 			<div className={`${styleContainer.container} ${s.projectsContainer}`}>
-				{isOpenModal && <ModalCarousel1 handleCloseModal = {handleCloseModal} screenshots={screenshots}/>}
+				{isOpenModal && <ModalCarousel handleCloseModal = {handleCloseModal} screenshots={screenshots}/>}
 				<Title title={"projects"}/>
 				<div className={s.projects}>
 					<AliceCarousel

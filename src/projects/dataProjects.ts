@@ -1,10 +1,14 @@
-import todolist from "../../src/assets/images/todolist.png";
-import socialNetwork from "../../src/assets/images/socialnetworks.png";
-import cards from "../../src/assets/images/cardsFon.png";
-import citrinium from "../../src/assets/images/citrinium.png";
+import todolistFon from "../../src/assets/images/todolist.png";
+import socialNetworkFon from "../../src/assets/images/socialnetworks.png";
+import cardsFon from "../../src/assets/images/cardsFon.png";
+import citriniumFon from "../../src/assets/images/citrinium.png";
 import peatCalculator from "../../src/assets/images/peat-calculator.png"
 import signIn from "../../src/assets/images/projects/cards/SignIn.png"
 import signUp from "../../src/assets/images/projects/cards/SignUp.png"
+import profile from "../../src/assets/images/projects/cards/Profile.png"
+import packs from "../assets/images/projects/cards/Packs.png"
+import cards from "../assets/images/projects/cards/Cards.png"
+import addCards from "../../src/assets/images/projects/cards/AddCard.png"
 
 
 export const projects = [
@@ -19,7 +23,7 @@ export const projects = [
 	{
 		title: "Task recorder",
 		description: "Web-application for every day on a week",
-		img: todolist,
+		img: todolistFon,
 		siteLink: 'https://pavelvoitov.github.io/todolist-ts-01/',
 		codeLink: 'https://github.com/PavelVoitov/todolist-ts-01.git',
 		sliderPhoto: []
@@ -27,7 +31,7 @@ export const projects = [
 	{
 		title: "Social network",
 		description: "Social network in 8-bit style",
-		img: socialNetwork,
+		img: socialNetworkFon,
 		siteLink: 'https://pavelvoitov.github.io/8-bit/',
 		codeLink: 'https://github.com/PavelVoitov/8-bit.git',
 		sliderPhoto: []
@@ -35,15 +39,15 @@ export const projects = [
 	{
 		title: "Education cards",
 		description: "SPA for fast and effective learning",
-		img: cards,
+		img: cardsFon,
 		siteLink: '',
 		codeLink: '',
-		sliderPhoto: [signIn, signUp]
+		sliderPhoto: [signIn, signUp, profile, packs, cards, addCards]
 	},
 	{
 		title: "Citrinium",
 		description: "Web-site for dental clinic",
-		img: citrinium,
+		img: citriniumFon,
 		siteLink: 'https://citrinium.by/',
 		codeLink: '',
 		sliderPhoto: [],
