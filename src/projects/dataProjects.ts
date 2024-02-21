@@ -9,6 +9,12 @@ import profile from "../../src/assets/images/projects/cards/Profile.png"
 import packs from "../assets/images/projects/cards/Packs.png"
 import cards from "../assets/images/projects/cards/Cards.png"
 import addCards from "../../src/assets/images/projects/cards/AddCard.png"
+import loginPeatCalculator from "../assets/images/projects/peat-calculator/login-form.png"
+import outPeatCalculator from "../assets/images/projects/peat-calculator/out.png"
+import selectPeat from "../assets/images/projects/peat-calculator/select-peat.png"
+import workSchemePeatCalculator from "../assets/images/projects/peat-calculator/work-scheme.png"
+import hoppersPeatCalculator from "../assets/images/projects/peat-calculator/hoppers.png"
+import boxesPeatCalculator from "../assets/images/projects/peat-calculator/boxes.png"
 
 
 export const projects = [
@@ -16,9 +22,16 @@ export const projects = [
 		title: "Peat calculator",
 		description: "Web application for calculating the proportions of peat in production and accounting for peat stored in warehouses.",
 		img: peatCalculator,
-		siteLink: 'https://pavelvoitov.github.io/peat-calculator/',
-		githubLink: 'https://github.com/PavelVoitov/peat-calculator.git',
-		sliderPhoto: []
+		siteLink: '',
+		githubLink: '',
+		sliderPhoto: [
+			loginPeatCalculator,
+			outPeatCalculator,
+			selectPeat,
+			workSchemePeatCalculator,
+			hoppersPeatCalculator,
+			boxesPeatCalculator
+		]
 	},
 	{
 		title: "Task recorder",
