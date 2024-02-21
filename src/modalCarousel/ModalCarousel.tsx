@@ -23,7 +23,7 @@ export const ModalCarousel = ({handleCloseModal, screenshots}: Props) => {
               <div className={s.btnClose} onClick={handleCloseModal}>⨉</div>
               <img
                 src={screen}
-                alt={"project image"}
+                alt={"project screenshot"}
                 className={s.image}
               />
             </div>
