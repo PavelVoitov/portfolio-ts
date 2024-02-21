@@ -48,9 +48,14 @@ button:disabled {
                   20px, normal, 1px solid #00d2bb,
                   5px solid transparent, .1s ease-in-out, relative,
                   1, pointer);
-  opacity: 0.6;
+  opacity: 0.7;
   overflow: hidden;
   word-wrap: break-word;
+}
+
+.imageLink {
+  margin-left: 5px;
+  width: 13px;
 }
 
 @media only screen and (max-width: 750px) and (min-width: 0px) {

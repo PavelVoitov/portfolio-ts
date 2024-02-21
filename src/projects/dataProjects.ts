@@ -17,15 +17,15 @@ export const projects = [
 		description: "Web application for calculating the proportions of peat in production and accounting for peat stored in warehouses.",
 		img: peatCalculator,
 		siteLink: 'https://pavelvoitov.github.io/peat-calculator/',
-		codeLink: 'https://github.com/PavelVoitov/peat-calculator.git',
+		githubLink: 'https://github.com/PavelVoitov/peat-calculator.git',
 		sliderPhoto: []
 	},
 	{
 		title: "Task recorder",
 		description: "Web-application for every day on a week",
 		img: todolistFon,
-		siteLink: 'https://pavelvoitov.github.io/todolist-ts-01/',
-		codeLink: 'https://github.com/PavelVoitov/todolist-ts-01.git',
+		siteLink: 'https://pavelvoitov.github.io/task-recorder/',
+		githubLink: 'https://github.com/PavelVoitov/task-recorder.git',
 		sliderPhoto: []
 	},
 	{
@@ -33,7 +33,7 @@ export const projects = [
 		description: "Social network in 8-bit style",
 		img: socialNetworkFon,
 		siteLink: 'https://pavelvoitov.github.io/8-bit/',
-		codeLink: 'https://github.com/PavelVoitov/8-bit.git',
+		githubLink: 'https://github.com/PavelVoitov/8-bit.git',
 		sliderPhoto: []
 	},
 	{
@@ -41,15 +41,15 @@ export const projects = [
 		description: "SPA for fast and effective learning",
 		img: cardsFon,
 		siteLink: '',
-		codeLink: '',
+		githubLink: '',
 		sliderPhoto: [signIn, signUp, profile, packs, cards, addCards]
 	},
 	{
 		title: "Citrinium",
-		description: "Web-site for dental clinic",
+		description: "Website for a dental clinic with a contact form and responsive design",
 		img: citriniumFon,
 		siteLink: 'https://citrinium.by/',
-		codeLink: '',
+		githubLink: '',
 		sliderPhoto: [],
 	},
 ]

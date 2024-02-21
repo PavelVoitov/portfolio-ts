@@ -46,7 +46,7 @@ export const Projects = () => {
 															description={el.description}
 															img={el.img}
 															siteLink={el.siteLink}
-															codeLink={el.codeLink}
+															codeLink={el.githubLink}
 															sliderPhotos={el.sliderPhoto}
 															handleOpenModal={handleOpenModal}
 							/>

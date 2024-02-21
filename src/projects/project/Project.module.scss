@@ -3,7 +3,7 @@
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     margin: 10px 50px 10px 50px;
@@ -35,12 +35,33 @@
         }
     }
     .textBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         .description {
+            text-align: center;
             width: 100%;
             color: $textColor;
             @media only screen and (max-width: 550px) and (min-width: 0px) {
                     width: 90%;
+            }
+        }
+        .titleAndIconBlock {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            h3 {
+                display: block;
+            }
+            .githubIcon {
+                display: block;
+                width: 20px;
+                margin-left: 10px;
+                img {
+                    object-fit: fill;
+                }
             }
         }
     }
