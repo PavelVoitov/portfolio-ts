@@ -5,19 +5,19 @@
   @include button(
                   200px, 50px, 30px,
                   20px, $textColor, $bgSecondColor,
-                  20px, bolder, 1px solid #00d2bb,
+                  20px, bolder, 1px solid $primaryColor,
                   5px solid transparent, .2s ease-in-out, relative,
                   1, pointer);
 }
 
 button:hover {
   background-color: #077065;
-  color: #fdfdfd;
-  outline: 1px solid #00d2bb;
+  color: $textColor;
+  outline: 1px solid $primaryColor;
   outline-offset: 3px;
 
   &:active {
-    color: #fdfdfd;
+    color: $textColor;
     background-color: #179119;
     width: 90px;
     transition: 1s ease;
@@ -44,8 +44,8 @@ button:disabled {
 .projects {
   @include button(
                   160px, 50px, 30px,
-                  20px, #525655, #00d2bb,
-                  20px, normal, 1px solid #00d2bb,
+                  20px, #525655, $primaryColor,
+                  20px, normal, 1px solid $primaryColor,
                   5px solid transparent, .1s ease-in-out, relative,
                   1, pointer);
   opacity: 0.7;
