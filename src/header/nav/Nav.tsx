@@ -1,8 +1,11 @@
 import React from 'react'
 import s from './Nav.module.scss'
 import {Link} from "react-scroll";
+import {useTranslation} from "react-i18next";
 
 export const Nav = () => {
+	const {t} = useTranslation()
+
 	return (
 		<div className={s.nav}>
 			<Link to="main"
@@ -12,7 +15,7 @@ export const Nav = () => {
 						offset={-100}
 						duration={2000}
 						className={s.link}>
-				Home
+				{t('home')}
 			</Link>
 			<Link to="skills"
 						activeClass={s.active}

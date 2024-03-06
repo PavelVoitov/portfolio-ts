@@ -16,7 +16,6 @@ import workSchemePeatCalculator from "../assets/images/projects/peat-calculator/
 import hoppersPeatCalculator from "../assets/images/projects/peat-calculator/hoppers.png"
 import boxesPeatCalculator from "../assets/images/projects/peat-calculator/boxes.png"
 
-
 export const projects = [
 	{
 		title: "Peat calculator",

@@ -12,7 +12,6 @@ type ButtonPropsType = {
 }
 
 export const Button = ({title, onClick, disable, type, image}: ButtonPropsType) => {
-    console.log(image)
     return (
       <button type={title === "Send" ? "submit" : "button"} className={type === 'projects' ? s.projects : s.default}
               onClick={onClick} disabled={disable}>

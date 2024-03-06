@@ -4,8 +4,6 @@ import styleContainer from '../../src/common/styles/Container.module.scss';
 import {Nav} from './nav/Nav';
 import {BurgerNav} from "./burgerNav/BurgerNav";
 
-
-
 export const Header = () => {
 	const [position, setPosition] = useState(window.scrollY)
 	const [visible, setVisible] = useState(true)
