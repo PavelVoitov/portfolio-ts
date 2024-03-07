@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {MouseEvent} from 'react'
 import s from './Nav.module.scss'
 import {Link} from "react-scroll";
 import {useTranslation} from "react-i18next";
 
-export const Nav = () => {
+type Props = {
+	changeLanguage: (lng: string) => void
+}
+export const Nav = ({changeLanguage}: Props) => {
 	const {t} = useTranslation()
+	const handleChangeLanguage = (e: MouseEvent<HTMLButtonElement>) => {
+		changeLanguage(e.currentTarget.id)
+	}
 
 	return (
 		<div className={s.nav}>
@@ -44,6 +50,10 @@ export const Nav = () => {
 						className={s.link}>
 				Contact
 			</Link>
+			<div>
+				<button id="en" onClick={(e) => handleChangeLanguage(e)}>En</button>
+				<button id="ru" onClick={(e) => handleChangeLanguage(e)}>Ru</button>
+			</div>
 		</div>
 	)
 }

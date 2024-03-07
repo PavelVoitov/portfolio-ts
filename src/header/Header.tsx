@@ -4,7 +4,10 @@ import styleContainer from '../../src/common/styles/Container.module.scss';
 import {Nav} from './nav/Nav';
 import {BurgerNav} from "./burgerNav/BurgerNav";
 
-export const Header = () => {
+type Props = {
+	changeLanguage: (lng: string) => void
+}
+export const Header = ({changeLanguage}: Props) => {
 	const [position, setPosition] = useState(window.scrollY)
 	const [visible, setVisible] = useState(true)
 	useEffect(() => {
@@ -25,7 +28,7 @@ export const Header = () => {
 		<div className={`${s.headerBlock} ${cls}`}>
 			<div className={`${styleContainer.container} ${s.header}`}>
 				<div className={s.container}>
-					<Nav/>
+					<Nav changeLanguage={changeLanguage}/>
 					<BurgerNav/>
 				</div>
 			</div>

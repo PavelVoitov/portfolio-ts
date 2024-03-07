@@ -47,7 +47,9 @@ export const Project = ({
 					<h3>
 						{title}
 					</h3>
-					{codeLink && <a href={codeLink} target={"_blank"}
+					{codeLink && <a href={codeLink}
+                          target={"_blank"}
+                          rel="noreferrer"
                           title="Github">
 						<img src={githubIcon} alt="github icon" className={c.githubIcon}/>
 					</a>}
