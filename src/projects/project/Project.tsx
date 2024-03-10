@@ -2,6 +2,7 @@ import React from "react";
 import c from './Project.module.scss'
 import {Button} from "../../common/components/button/Button";
 import githubIcon from "../../assets/images/github-mark.png"
+import {useTranslation} from "react-i18next";
 
 type Props = {
   title: string
@@ -21,7 +22,7 @@ export const Project = ({
                           sliderPhotos,
                           handleOpenModal
                         }: Props) => {
-
+  const {t} = useTranslation()
   const backgroundImage = {
     backgroundImage: `url(${img})`
   }
@@ -33,7 +34,7 @@ export const Project = ({
   return (
     <div className={c.project}>
       <div className={c.projectImage} style={backgroundImage}>
-        {siteLink !== '' && <Button title={'Link'} onClick={() => {
+        {siteLink !== '' && <Button title={t('link')} onClick={() => {
           window.open(siteLink)
         }} type={"projects"} image={true}/>}
         {sliderPhotos.length !== 0

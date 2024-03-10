@@ -9,14 +9,8 @@ import {Header} from './header/Header';
 import {ScrollToTop} from "./common/components/scrollToTopButton/ScrollToTopButton";
 import {useTranslation} from "react-i18next";
 
-
-const lngs = {
-	en: {nativeName: 'English'},
-	ru: {nativeName: 'Russian'}
-}
-
 function App() {
-	const {t, i18n} = useTranslation()
+	const { i18n} = useTranslation()
 	const changeLanguage = (lng: string) => {
 		i18n.changeLanguage(lng)
 	}

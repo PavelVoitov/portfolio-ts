@@ -8,9 +8,10 @@ import {Zoom} from "react-awesome-reveal";
 import Tilt from 'react-parallax-tilt';
 import cv from '../assets/Pavel_Voitov_CV.pdf'
 import {Button} from "../common/components/button/Button";
-
+import {useTranslation} from "react-i18next";
 
 export const Main = () => {
+	const {t} = useTranslation()
 	const init = useCallback(async (engine: any) => {
 		await loadFull(engine)
 	}, [])
@@ -46,17 +47,17 @@ export const Main = () => {
 			<div className={styleContainer.container}>
 				<div className={s.mainText}>
 					<Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} transitionSpeed={5000}>
-						<h3 className={s.firstName}>Pavel</h3>
+						<h3 className={s.firstName}>{t("pavel")}</h3>
 					</Tilt>
 					<Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} transitionSpeed={5000}>
-						<h3 className={s.lastName}>Voitov</h3>
+						<h3 className={s.lastName}>{t('voitov')}</h3>
 					</Tilt>
 					<Zoom>
 						<Tilt tiltMaxAngleX={30} tiltMaxAngleY={30} transitionSpeed={5000}>
-							<span className={s.spanFontSize}>Frontend Developer</span>
+							<span className={s.spanFontSize}>{t("frontendDeveloper")}</span>
 						</Tilt>
 						<a href={cv} download="Pavel_Voitov.pdf">
-							<Button title={'Download CV'} type={"projects"}/>
+							<Button title={t('downloadCV')} type={"projects"}/>
 						</a>
 					</Zoom>
 				</div>

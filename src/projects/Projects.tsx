@@ -8,6 +8,7 @@ import AliceCarousel from "react-alice-carousel";
 import "../../src/common/styles/carousel.css";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import {ModalCarousel} from "../modalCarousel/ModalCarousel";
+import {useTranslation} from "react-i18next";
 
 const responsive = {
 	0: { items: 1 },
@@ -16,6 +17,7 @@ const responsive = {
 };
 
 export const Projects = () => {
+	const {t} = useTranslation()
 	const [isOpenModal, setIsOpenModal] = useState<boolean>(false)
 	const [screenshots, setScreenshots] = useState<[] | string[]>([])
 	const handleOpenModal = (screenshots: string[]) => {
@@ -31,7 +33,7 @@ export const Projects = () => {
 		<div id={'projects'} className={s.projectsBlock}>
 			<div className={`${styleContainer.container} ${s.projectsContainer}`}>
 				{isOpenModal && <ModalCarousel handleCloseModal = {handleCloseModal} screenshots={screenshots}/>}
-				<Title title={"projects"}/>
+				<Title title={t('projects')}/>
 				<div className={s.projects}>
 					<AliceCarousel
 						controlsStrategy={"alternate"}

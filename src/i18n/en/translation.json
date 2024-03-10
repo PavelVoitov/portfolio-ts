@@ -1,4 +1,53 @@
 {
   "home": "Home",
-  "skills": "Skills"
+  "skills": "Skills",
+  "projects": "Projects",
+  "contacts": "Contacts",
+  "downloadCV": "Download CV",
+  "frontendDeveloper": "Frontend Developer",
+  "pavel": "Pavel",
+  "voitov": "Voitov",
+  "hire": "Hire",
+  "name": "Name",
+  "yourMassage": "Your massage",
+  "send": "Send",
+  "creator": "Created by Pavel Voitov",
+  "conditions": "I am considering options for remote work and relocation anywhere in the world",
+  "link": "Link",
+  "JAVASCRIPT": {
+    "description": "Data types. Cycles, conditions, work with objects. Functions. Prototypes and inheritance. Working with objects. Array methods. Promises."
+  },
+  "TYPESCRIPT": {
+    "description": "Knowledge of data structures and algorithms and how they are used. Data typing in applications. Interfaces. Utility Types. Generics."
+  },
+  "REACT": {
+    "description": "Using class/functional components. Knowledge of hooks, HOCs, life methods and component life cycle. Understanding the benefits of working with React."
+  },
+  "HTML": {
+    "description": "Creation of the structure of the html pages. Working with text, images, links. Using semantic tags. Сross-browser adaptive layout."
+  },
+  "CSS/SASS": {
+    "description": "Using SCSS and SASS modules to style web pages. Understanding the basics, principles and rules of work. Flex and Grid technologies."
+  },
+  "GIT": {
+    "description": "Working with online project hosting service. Joint development of applications. Working with branches, merge, deploy."
+  },
+  "MATERIAL UI": {
+    "description": "Utilizing Material-UI library for building responsive and visually appealing user interfaces."
+  },
+  "REDUX/REDUX TOOLKIT": {
+    "description": "Implementing Redux for state management in applications. Applying actions, reducers, and thunks for effective application state management."
+  },
+  "POSTMAN": {
+    "description": "Using Postman to develop and test APIs. Working with various API protocols and additional features."
+  },
+  "TAILWIND": {
+    "description": "Utilizing Tailwind CSS for efficient and utility-first styling of web applications. Familiarity with Tailwind's class-based approach and responsive design principles."
+  },
+  "VUE/VUEX": {
+    "description": "Building applications with Vue.js and managing state with Vuex. Understanding Vue components, directives, and reactivity. Implementing complex state management solutions."
+  },
+  "BOOTSTRAP": {
+    "description": "Applying Bootstrap framework for rapid and responsive front-end development. Understanding Bootstrap components, grids, and utility classes"
+  }
 }

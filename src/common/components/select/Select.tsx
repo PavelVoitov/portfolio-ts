@@ -1,23 +1,23 @@
-import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent} from 'react'
-import s from './SuperSelect.module.css'
+import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent, FC} from 'react'
+import s from './Select.module.css'
+import {LanguagesType} from "../../../header/nav/Nav";
 
 type DefaultSelectPropsType = DetailedHTMLProps<
   SelectHTMLAttributes<HTMLSelectElement>,
   HTMLSelectElement
 >
 
-type SuperSelectPropsType = DefaultSelectPropsType & {
-  options: any
-  onChangeOption: (option: number) => void
+type SelectPropsType = DefaultSelectPropsType & {
+  options: LanguagesType
+  onChangeOption: (option: string) => void
 }
 
-export const SuperSelect: React.FC<SuperSelectPropsType> = ({
-                                                       options,
-                                                       className,
-                                                       onChange,
-                                                       onChangeOption,
-                                                       ...restProps
-                                                     }) => {
+export const Select: FC<SelectPropsType> = ({
+                                              options,
+                                              className,
+                                              onChange,
+                                              onChangeOption,
+                                              ...restProps}) => {
   const mappedOptions: JSX.Element[] = options
     ? options.map((o: any) => (
       <option
@@ -33,15 +33,13 @@ export const SuperSelect: React.FC<SuperSelectPropsType> = ({
 
   const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
     if (onChangeOption) {
-      onChangeOption(+e.currentTarget.value)
+      onChangeOption(e.currentTarget.value)
     }
   }
 
-  const finalSelectClassName = s.select + (className ? ' ' +  className: '')
-
   return (
     <select
-      className={finalSelectClassName}
+      className={''}
       onChange={onChangeCallback}
       {...restProps}
     >

@@ -2,14 +2,27 @@ import React, {MouseEvent} from 'react'
 import s from './Nav.module.scss'
 import {Link} from "react-scroll";
 import {useTranslation} from "react-i18next";
+import {Select} from "../../common/components/select/Select";
+
+type LanguageType = {
+	id: string
+  title: string
+}
+export type LanguagesType = LanguageType[]
+
+const lngs: LanguagesType = [
+	{id: "en", title: 'En'},
+	{id: "ru", title: 'Ru'},
+]
 
 type Props = {
 	changeLanguage: (lng: string) => void
 }
 export const Nav = ({changeLanguage}: Props) => {
 	const {t} = useTranslation()
-	const handleChangeLanguage = (e: MouseEvent<HTMLButtonElement>) => {
-		changeLanguage(e.currentTarget.id)
+
+	const handleSelectLanguage = (lng: string) => {
+		changeLanguage(lng)
 	}
 
 	return (
@@ -30,7 +43,7 @@ export const Nav = ({changeLanguage}: Props) => {
 						offset={-100}
 						duration={2000}
 						className={s.link}>
-				Skills
+				{t('skills')}
 			</Link>
 			<Link to="projects"
 						activeClass={s.active}
@@ -39,7 +52,7 @@ export const Nav = ({changeLanguage}: Props) => {
 						offset={-100}
 						duration={2000}
 						className={s.link}>
-				Projects
+				{t('projects')}
 			</Link>
 			<Link to="contactForm"
 						activeClass={s.active}
@@ -48,12 +61,9 @@ export const Nav = ({changeLanguage}: Props) => {
 						offset={-50}
 						duration={2000}
 						className={s.link}>
-				Contact
+				{t('contacts')}
 			</Link>
-			<div>
-				<button id="en" onClick={(e) => handleChangeLanguage(e)}>En</button>
-				<button id="ru" onClick={(e) => handleChangeLanguage(e)}>Ru</button>
-			</div>
+			<Select onChangeOption={handleSelectLanguage} options={lngs}/>
 		</div>
 	)
 }

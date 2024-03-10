@@ -6,6 +6,7 @@ import {Title} from "../common/components/title/Title";
 import {Modal} from "../common/components/modal/Modal";
 import {useFormik} from "formik";
 import emailjs from '@emailjs/browser';
+import {useTranslation} from "react-i18next";
 
 type FormikErrorType = {
 	name?: string
@@ -14,6 +15,7 @@ type FormikErrorType = {
 }
 
 export const ContactForm = () => {
+	const {t} = useTranslation()
 	const [isOpenModal, setIsOpenModal] = useState(false)
 	const [disableButton, setDisableButton] = useState(false)
 	const [error, setError] = useState<boolean>(false)
@@ -87,7 +89,7 @@ export const ContactForm = () => {
 		<div id={'contactForm'} className={s.contactsBlock}>
 			<div className={`${styleContainer.container} ${s.contactsContainer}`}>
 				{isOpenModal ? <Modal handleClose={handleClose} error={error}/> : ''}
-				<Title title={'contact'}/>
+				<Title title={t('contacts')}/>
 				<div className={s.formBlock}>
 					<form className={s.form} ref={form} onSubmit={formik.handleSubmit}>
 						<>
@@ -96,7 +98,7 @@ export const ContactForm = () => {
 								: <div className={s.emptyErrorField}></div>}
 							<input
 								type='text'
-								placeholder='Name'
+								placeholder={t('name')}
 								{...formik.getFieldProps("name")}
 								className={formik.errors.name && formik.touched.name ? s.error : ''}
 							/>
@@ -117,12 +119,12 @@ export const ContactForm = () => {
 								? <div className={s.errorField}>{formik.errors.message}</div>
 								: <div className={s.emptyErrorField}></div>}
 							<textarea
-								placeholder='Your massage...'
+								placeholder={`${t("yourMassage")}...`}
 								{...formik.getFieldProps("message")}
 								className={formik.errors.message && formik.touched.message ? s.error : ''}
 							/>
 						</>
-						<Button title={'Send'} disable={disableButton} type={"default"}/>
+						<Button title={t('send')} disable={disableButton} type={"default"}/>
 					</form>
 				</div>
 			</div>
