@@ -20,6 +20,8 @@ type Props = {
 }
 export const Nav = ({changeLanguage}: Props) => {
 	const {t} = useTranslation()
+	const localStorageLanguage = localStorage.getItem('i18nextLng')
+	const defaultLanguage = localStorageLanguage ? localStorageLanguage : 'en'
 
 	const handleSelectLanguage = (lng: string) => {
 		changeLanguage(lng)
@@ -63,7 +65,7 @@ export const Nav = ({changeLanguage}: Props) => {
 						className={s.link}>
 				{t('contacts')}
 			</Link>
-			<Select onChangeOption={handleSelectLanguage} options={lngs}/>
+			<Select onChangeOption={handleSelectLanguage} options={lngs} defaultLanguage={defaultLanguage}/>
 		</div>
 	)
 }

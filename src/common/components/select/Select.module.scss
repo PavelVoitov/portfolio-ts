@@ -1,0 +1,23 @@
+@import "../../styles/sass/variables.scss";
+
+.select {
+    -webkit-appearance: menulist-button;
+    box-sizing: border-box;
+    padding: 0 5px;
+    background-color: $bgSecondColor;
+    font: inherit;
+    color: $primaryColor;
+    border-radius: 0.25em;
+    border: 1px solid $textColor;
+    cursor: pointer;
+    &:focus {
+        border: 1px solid $textColor;
+        background-color: $bgSecondColor;
+    }
+    .option {
+        border-radius: 0.25em;
+        margin-top: 10px;
+        color: $primaryColor;
+    }
+}
+

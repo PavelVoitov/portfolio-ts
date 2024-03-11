@@ -1,5 +1,5 @@
 import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent, FC} from 'react'
-import s from './Select.module.css'
+import s from './Select.module.scss'
 import {LanguagesType} from "../../../header/nav/Nav";
 
 type DefaultSelectPropsType = DetailedHTMLProps<
@@ -10,6 +10,7 @@ type DefaultSelectPropsType = DetailedHTMLProps<
 type SelectPropsType = DefaultSelectPropsType & {
   options: LanguagesType
   onChangeOption: (option: string) => void
+  defaultLanguage: string
 }
 
 export const Select: FC<SelectPropsType> = ({
@@ -17,6 +18,7 @@ export const Select: FC<SelectPropsType> = ({
                                               className,
                                               onChange,
                                               onChangeOption,
+                                              defaultLanguage,
                                               ...restProps}) => {
   const mappedOptions: JSX.Element[] = options
     ? options.map((o: any) => (
@@ -38,12 +40,13 @@ export const Select: FC<SelectPropsType> = ({
   }
 
   return (
-    <select
-      className={''}
-      onChange={onChangeCallback}
-      {...restProps}
-    >
-      {mappedOptions}
-    </select>
+      <select
+        defaultValue={defaultLanguage}
+        className={s.select}
+        onChange={onChangeCallback}
+        {...restProps}
+      >
+        {mappedOptions}
+      </select>
   )
 }
