@@ -45,8 +45,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "i18next-resources-for-ts": "i18next-resources-for-ts toc -i src/i18n/ru -o ./src/@types/resources.ts"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

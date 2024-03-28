@@ -45,7 +45,7 @@ export const Projects = () => {
 						{projects.map(el => {
 							return <Project key={el.title}
 															title={el.title}
-															description={el.description}
+															description={t(`projectsDescription.${el.id}`)}
 															img={el.img}
 															siteLink={el.siteLink}
 															codeLink={el.githubLink}

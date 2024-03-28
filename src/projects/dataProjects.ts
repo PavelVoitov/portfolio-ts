@@ -18,8 +18,8 @@ import boxesPeatCalculator from "../assets/images/projects/peat-calculator/boxes
 
 export const projects = [
 	{
+		id: "peat-calculator",
 		title: "Peat calculator",
-		description: "Web application for calculating the proportions of peat in production and accounting for peat stored in warehouses.",
 		img: peatCalculator,
 		siteLink: '',
 		githubLink: '',
@@ -33,32 +33,32 @@ export const projects = [
 		]
 	},
 	{
+		id: "task-recorder",
 		title: "Task recorder",
-		description: "Web-application for every day on a week",
 		img: todolistFon,
 		siteLink: 'https://pavelvoitov.github.io/task-recorder/',
 		githubLink: 'https://github.com/PavelVoitov/task-recorder.git',
 		sliderPhoto: []
 	},
 	{
+		id: "social-network",
 		title: "Social network",
-		description: "Social network in 8-bit style",
 		img: socialNetworkFon,
 		siteLink: 'https://pavelvoitov.github.io/8-bit/',
 		githubLink: 'https://github.com/PavelVoitov/8-bit.git',
 		sliderPhoto: []
 	},
 	{
+		id: "education-cards",
 		title: "Education cards",
-		description: "SPA for fast and effective learning",
 		img: cardsFon,
 		siteLink: '',
 		githubLink: '',
 		sliderPhoto: [signIn, signUp, profile, packs, cards, addCards]
 	},
 	{
+		id: "citrinium",
 		title: "Citrinium",
-		description: "Website for a dental clinic with a contact form and responsive design",
 		img: citriniumFon,
 		siteLink: 'https://citrinium.by/',
 		githubLink: '',

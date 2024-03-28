@@ -1,4 +1,4 @@
-import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent, FC} from 'react'
+import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent, FC, memo} from 'react'
 import s from './Select.module.scss'
 import {LanguagesType} from "../../../header/nav/Nav";
 
@@ -13,7 +13,7 @@ type SelectPropsType = DefaultSelectPropsType & {
   defaultLanguage: string
 }
 
-export const Select: FC<SelectPropsType> = ({
+export const Select: FC<SelectPropsType> = (({
                                               options,
                                               className,
                                               onChange,
@@ -49,4 +49,4 @@ export const Select: FC<SelectPropsType> = ({
         {mappedOptions}
       </select>
   )
-}
+})

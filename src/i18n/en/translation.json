@@ -24,10 +24,10 @@
     "description": "Using class/functional components. Knowledge of hooks, HOCs, life methods and component life cycle. Understanding the benefits of working with React."
   },
   "HTML": {
-    "description": "Creation of the structure of the html pages. Working with text, images, links. Using semantic tags. Сross-browser adaptive layout."
+    "description": "Creation of the structure of the html pages. Working with text, images, links. Using semantic tags."
   },
   "CSS/SASS": {
-    "description": "Using SCSS and SASS modules to style web pages. Understanding the basics, principles and rules of work. Flex and Grid technologies."
+    "description": "Using SCSS and SASS modules to style web pages. Understanding the basics, principles and rules of work. Flex and Grid technologies. Сross-browser adaptive layout."
   },
   "GIT": {
     "description": "Working with online project hosting service. Joint development of applications. Working with branches, merge, deploy."
@@ -49,5 +49,12 @@
   },
   "BOOTSTRAP": {
     "description": "Applying Bootstrap framework for rapid and responsive front-end development. Understanding Bootstrap components, grids, and utility classes"
+  },
+  "projectsDescription": {
+    "social-network": "A social network in 8-bit style where users can exchange messages, share content, and make new friends.",
+    "peat-calculator": "Web application for calculating the proportions of peat in production and accounting for peat stored in warehouses.",
+    "education-cards": "SPA for optimizing the learning process. It provides the ability to track progress, sort, and review material.",
+    "task-recorder": "An application for daily task management, providing the ability to create, plan, and edit tasks.",
+    "citrinium": "Website for a dental clinic with a contact form and responsive design ensures convenient access to information and appointment booking on all devices."
   }
 }
