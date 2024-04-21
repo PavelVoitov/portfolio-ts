@@ -56,9 +56,9 @@ export const Main = () => {
 						<Tilt tiltMaxAngleX={30} tiltMaxAngleY={30} transitionSpeed={5000}>
 							<span className={s.spanFontSize}>{t("frontendDeveloper")}</span>
 						</Tilt>
-						<a href={cv} download="Pavel_Voitov.pdf">
-							<Button title={t('downloadCV')} type={"projects"}/>
-						</a>
+						{/*<a href={cv} download="Pavel_Voitov.pdf">*/}
+						{/*	<Button title={t('downloadCV')} type={"projects"}/>*/}
+						{/*</a>*/}
 					</Zoom>
 				</div>
 					<div className={s.mainPhoto}>
