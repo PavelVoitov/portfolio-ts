@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-ts/static/css/main.e4f7a6d6.css",
-    "main.js": "/portfolio-ts/static/js/main.2a0692d7.js",
+    "main.js": "/portfolio-ts/static/js/main.aa6bfd9b.js",
     "static/js/787.6994c3f5.chunk.js": "/portfolio-ts/static/js/787.6994c3f5.chunk.js",
-    "static/media/Pavel_Voitov_CV.pdf": "/portfolio-ts/static/media/Pavel_Voitov_CV.135abd7eef563e3959ae.pdf",
     "static/media/boxes.png": "/portfolio-ts/static/media/boxes.1059a3d2b5a76a80bc2a.png",
     "static/media/select-peat.png": "/portfolio-ts/static/media/select-peat.e3843147802f92b30174.png",
     "static/media/hoppers.png": "/portfolio-ts/static/media/hoppers.f34115c992586826865f.png",
@@ -25,11 +24,11 @@
     "static/media/failed.png": "/portfolio-ts/static/media/failed.f5c98ed1ab482e0f97fb.png",
     "index.html": "/portfolio-ts/index.html",
     "main.e4f7a6d6.css.map": "/portfolio-ts/static/css/main.e4f7a6d6.css.map",
-    "main.2a0692d7.js.map": "/portfolio-ts/static/js/main.2a0692d7.js.map",
+    "main.aa6bfd9b.js.map": "/portfolio-ts/static/js/main.aa6bfd9b.js.map",
     "787.6994c3f5.chunk.js.map": "/portfolio-ts/static/js/787.6994c3f5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4f7a6d6.css",
-    "static/js/main.2a0692d7.js"
+    "static/js/main.aa6bfd9b.js"
   ]
 }
