@@ -3,6 +3,7 @@ import socialNetworkFon from "../../src/assets/images/socialnetworks.png";
 import cardsFon from "../../src/assets/images/cardsFon.png";
 import citriniumFon from "../../src/assets/images/citrinium.png";
 import peatCalculator from "../../src/assets/images/peat-calculator.png"
+import stxlotty from "../../src/assets/images/stx-lotty.png"
 import signIn from "../../src/assets/images/projects/cards/SignIn.png"
 import signUp from "../../src/assets/images/projects/cards/SignUp.png"
 import profile from "../../src/assets/images/projects/cards/Profile.png"
@@ -64,4 +65,13 @@ export const projects = [
 		githubLink: '',
 		sliderPhoto: [],
 	},
+	{
+		id: "stxlotty",
+		title: "STXLOTTY",
+		img: stxlotty,
+		siteLink: 'https://stxlotty.top/',
+		githubLink: '',
+		sliderPhoto: [],
+
+	}
 ]
