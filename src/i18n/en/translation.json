@@ -50,6 +50,12 @@
   "BOOTSTRAP": {
     "description": "Applying Bootstrap framework for rapid and responsive front-end development. Understanding Bootstrap components, grids, and utility classes"
   },
+  "NUXT": {
+    "description": "Working with lifecycle methods. Server-side rendering support. Handling routing and state management with Vuex. Creating universal applications with client-side and server-side rendering."
+  },
+  "NEXT": {
+    "description": "Image optimization. Server-side rendering and static site generation support. Integration with React. Simple and efficient routing and state management."
+  },
   "projectsDescription": {
     "social-network": "A social network in 8-bit style where users can exchange messages, share content, and make new friends.",
     "peat-calculator": "Web application for calculating the proportions of peat in production and accounting for peat stored in warehouses.",

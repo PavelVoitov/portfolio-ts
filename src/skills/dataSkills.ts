@@ -1,15 +1,18 @@
-import js from "../../src/assets/images/JS.png";
-import ts from "../../src/assets/images/typescript.png";
-import react from "../../src/assets/images/react_logo.png";
-import html from "../../src/assets/images/html.png";
-import css from "../../src/assets/images/css.png";
-import git from "../../src/assets/images/Git.png";
-import materialUi from "../../src/assets/images/material-ui.png";
-import redux from "../../src/assets/images/redux.png";
-import postman from "../../src/assets/images/postman.png";
-import vue from "../../src/assets/images/vue.png";
-import tailwind from "../../src/assets/images/tailwind.png";
-import bootstrap from "../../src/assets/images/bootstrap.png";
+import js from "../../src/assets/images/skillIcons/JS.png";
+import ts from "../../src/assets/images/skillIcons/typescript.png";
+import react from "../../src/assets/images/skillIcons/react_logo.png";
+import html from "../../src/assets/images/skillIcons/html.png";
+import css from "../../src/assets/images/skillIcons/css.png";
+import git from "../../src/assets/images/skillIcons/Git.png";
+import materialUi from "../../src/assets/images/skillIcons/material-ui.png";
+import redux from "../../src/assets/images/skillIcons/redux.png";
+import postman from "../../src/assets/images/skillIcons/postman.png";
+import vue from "../../src/assets/images/skillIcons/vue.png";
+import tailwind from "../../src/assets/images/skillIcons/tailwind.png";
+import bootstrap from "../../src/assets/images/skillIcons/bootstrap.png";
+import nuxt from "../../src/assets/images/skillIcons/nuxt-logo.png";
+import next from "../../src/assets/images/skillIcons/nextjs-logo.png";
+import { title } from "process";
 
 export const skills = [
 	{
@@ -31,6 +34,14 @@ export const skills = [
 	{
 		title: 'VUE/VUEX',
 		img: vue
+	},
+	{
+		title: 'NUXT',
+		img: nuxt
+	},
+	{
+		title: 'NEXT',
+		img: next
 	},
 	{
 		title: 'HTML',

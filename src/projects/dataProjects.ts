@@ -34,6 +34,15 @@ export const projects = [
 		]
 	},
 	{
+		id: "stxlotty",
+		title: "STXLOTTY",
+		img: stxlotty,
+		siteLink: 'https://stxlotty.top/',
+		githubLink: '',
+		sliderPhoto: [],
+
+	},
+	{
 		id: "task-recorder",
 		title: "Task recorder",
 		img: todolistFon,
@@ -65,13 +74,4 @@ export const projects = [
 		githubLink: '',
 		sliderPhoto: [],
 	},
-	{
-		id: "stxlotty",
-		title: "STXLOTTY",
-		img: stxlotty,
-		siteLink: 'https://stxlotty.top/',
-		githubLink: '',
-		sliderPhoto: [],
-
-	}
 ]
