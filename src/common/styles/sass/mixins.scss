@@ -2,7 +2,7 @@
 @mixin button ($width, $height, $marginBottom, $marginTop,
 $backgroundColor, $color, $fontSize, $fontWeight, $border, $outline,
 $transition, $position, $z-index, $cursor) {
-  width: $width;
+  min-width: $width;
   height: $height;
   margin-bottom: $marginBottom;
   margin-top: $marginTop;
