@@ -56,12 +56,16 @@
   "NEXT": {
     "description": "Image optimization. Server-side rendering and static site generation support. Integration with React. Simple and efficient routing and state management."
   },
+  "REACT NATIVE": {
+    "description": "Developing cross-platform mobile applications using React Native and Expo. Building scalable architecture, managing state with Redux, implementing navigation flows, offline synchronization, API integration, and optimizing performance for iOS and Android platforms."
+  },
   "projectsDescription": {
     "social-network": "A social network in 8-bit style where users can exchange messages, share content, and make new friends.",
     "peat-calculator": "Web application for calculating the proportions of peat in production and accounting for peat stored in warehouses.",
     "education-cards": "SPA for optimizing the learning process. It provides the ability to track progress, sort, and review material.",
     "task-recorder": "An application for daily task management, providing the ability to create, plan, and edit tasks.",
     "citrinium": "Website for a dental clinic with a contact form and responsive design ensures convenient access to information and appointment booking on all devices.",
-    "stxlotty": "STXLOTTY is a Web3 next-generation lottery platform that connects into the Stacks platform. It uses blockchain technology to allow decentralized operations with great gains, transparency, privacy and security."
+    "stxlotty": "STXLOTTY is a Web3 next-generation lottery platform that connects into the Stacks platform. It uses blockchain technology to allow decentralized operations with great gains, transparency, privacy and security.",
+    "agro-mng-web": "Internal web platform for agricultural field management: maps, layers, and operational workflows. NDA: no public link."
   }
 }

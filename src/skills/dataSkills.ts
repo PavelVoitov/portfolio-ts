@@ -31,6 +31,10 @@ export const skills = [
 		title: 'REDUX/REDUX TOOLKIT',
 		img: redux
 	},
+    {
+        title: 'REACT NATIVE',
+        img: react,
+    },
 	{
 		title: 'VUE/VUEX',
 		img: vue
