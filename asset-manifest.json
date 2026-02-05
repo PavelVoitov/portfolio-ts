@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio-ts/static/css/main.c84c29ef.css",
-    "main.js": "/portfolio-ts/static/js/main.626fb569.js",
+    "main.css": "/portfolio-ts/static/css/main.b40703ac.css",
+    "main.js": "/portfolio-ts/static/js/main.c9a73b2f.js",
     "static/js/787.6994c3f5.chunk.js": "/portfolio-ts/static/js/787.6994c3f5.chunk.js",
+    "static/media/agro6.png": "/portfolio-ts/static/media/agro6.5b8668ad6efb3836732b.png",
+    "static/media/agro1.png": "/portfolio-ts/static/media/agro1.ceed8cb1c52eec2b01a9.png",
+    "static/media/agro5.png": "/portfolio-ts/static/media/agro5.ba7792e7e48e0f646d87.png",
+    "static/media/agro3.png": "/portfolio-ts/static/media/agro3.dc5b2e367c1f8e8e4686.png",
+    "static/media/agro2.png": "/portfolio-ts/static/media/agro2.1647c493456f51174db0.png",
     "static/media/boxes.png": "/portfolio-ts/static/media/boxes.1059a3d2b5a76a80bc2a.png",
     "static/media/select-peat.png": "/portfolio-ts/static/media/select-peat.e3843147802f92b30174.png",
     "static/media/hoppers.png": "/portfolio-ts/static/media/hoppers.f34115c992586826865f.png",
@@ -11,6 +16,8 @@
     "static/media/login-form.png": "/portfolio-ts/static/media/login-form.90ba487eac3d85d5dc4a.png",
     "static/media/Packs.png": "/portfolio-ts/static/media/Packs.63347589a3277f7a640c.png",
     "static/media/Cards.png": "/portfolio-ts/static/media/Cards.d5ba1e7b1269717bfe08.png",
+    "static/media/agro4.png": "/portfolio-ts/static/media/agro4.f593a66994b5cb351306.png",
+    "static/media/agroCover.png": "/portfolio-ts/static/media/agroCover.e6eeaf4b54c65e58f3b6.png",
     "static/media/photo.jpg": "/portfolio-ts/static/media/photo.fe157b396ad311c1c7e4.jpg",
     "static/media/Profile.png": "/portfolio-ts/static/media/Profile.ec22b1ad2068edae5719.png",
     "static/media/AddCard.png": "/portfolio-ts/static/media/AddCard.f28651a922dbc9759345.png",
@@ -19,17 +26,15 @@
     "static/media/SignIn.png": "/portfolio-ts/static/media/SignIn.a2911608b6575d396983.png",
     "static/media/SignUp.png": "/portfolio-ts/static/media/SignUp.a53d6c8e089efcd7952d.png",
     "static/media/peat-calculator.png": "/portfolio-ts/static/media/peat-calculator.bf13c231821973be0efa.png",
-    "static/media/socialnetworks.png": "/portfolio-ts/static/media/socialnetworks.aee71df6965309947e65.png",
     "static/media/cardsFon.png": "/portfolio-ts/static/media/cardsFon.9bbea79de20f0d83a00a.png",
-    "static/media/todolist.png": "/portfolio-ts/static/media/todolist.23784f531b8ed163a740.png",
     "static/media/failed.png": "/portfolio-ts/static/media/failed.f5c98ed1ab482e0f97fb.png",
     "index.html": "/portfolio-ts/index.html",
-    "main.c84c29ef.css.map": "/portfolio-ts/static/css/main.c84c29ef.css.map",
-    "main.626fb569.js.map": "/portfolio-ts/static/js/main.626fb569.js.map",
+    "main.b40703ac.css.map": "/portfolio-ts/static/css/main.b40703ac.css.map",
+    "main.c9a73b2f.js.map": "/portfolio-ts/static/js/main.c9a73b2f.js.map",
     "787.6994c3f5.chunk.js.map": "/portfolio-ts/static/js/787.6994c3f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c84c29ef.css",
-    "static/js/main.626fb569.js"
+    "static/css/main.b40703ac.css",
+    "static/js/main.c9a73b2f.js"
   ]
 }
