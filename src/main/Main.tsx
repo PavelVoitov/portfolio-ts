@@ -63,7 +63,7 @@ export const Main = () => {
                 </div>
                 <div className={s.mainPhoto}>
                     <Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} transitionSpeed={5000}>
-                        <img src={photo} width={540} height={770} alt="the site owner"/>
+                        <img src={photo} width={540} height={770} alt="the site owner" />
                     </Tilt>
                 </div>
             </div>

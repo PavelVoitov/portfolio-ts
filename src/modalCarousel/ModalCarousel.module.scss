@@ -1,56 +1,80 @@
 @import "../common/styles/sass/variables";
 
-.swiper {
-  width: 70%;
-  position: absolute;
-  //background: yellowgreen;
+.wrapper {
+  position: fixed;
+  inset: 0;
   z-index: 3;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c0c0cd8;
   --swiper-theme-color: #00d2bb;
-  @media only screen and (max-width: 1516px) and (min-width: 680px) {
-  width: 90%;
+
+  .btnClose {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    width: 13px;
+    border: $textColor 2px solid;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: $primaryColor;
+    z-index: 10;
+    @media only screen and (max-width: 680px) {
+      top: 12px;
+      right: 16px;
+      font-size: 10px;
+      padding: 3px 7px;
+      width: 7px;
+    }
   }
-  @media only screen and (max-width: 680px) and (min-width: 0px) {
-    width: 100%;
+
+  .swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; // важно
   }
 
   .swiperSlide {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%; // важно
+  }
 
-    .imgContainer {
-      display: flex;
-      align-items: end;
-      flex-direction: column;
-      position: relative;
+  .image {
+    display: block;
+    max-width: 90%;
+    object-fit: contain;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 2px inset rgba(255, 255, 255, 0.1);
+  }
 
-      .image {
-        display: block;
-        width: 100%;
-        height: 80%;
-        object-fit: fill;
-        border-radius: 10px;
-        margin-top: 10px;
-        box-sizing: border-box;
-        border-style: inset;
-      }
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    width: 44px;
+    height: 44px;
+    z-index: 10;
+  }
+
+  :global(.swiper-button-prev) {
+    left: 0;
+    @media only screen and (min-width: 769px) {
+      left: 20px;
     }
-    .btnClose {
-      width: 13px;
-      border: $textColor 2px solid;
-      border-radius: 20px;
-      padding: 5px 10px;
-      cursor: pointer;
-      color: $primaryColor;
-      @media only screen and (max-width: 680px) and (min-width: 0px) {
-        top: -20%;
-        font-size: 10px;
-        padding: 3px 7px;
-        width: 7px;
-      }
+  }
+
+  :global(.swiper-button-next) {
+    right: 0;
+    @media only screen and (min-width: 769px) {
+      right: 20px;
     }
   }
 }
