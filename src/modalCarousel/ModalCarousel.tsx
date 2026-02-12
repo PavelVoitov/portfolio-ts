@@ -25,13 +25,11 @@ export const ModalCarousel = ({ handleCloseModal, screenshots }: Props) => {
       >
         {screenshots.map((screen, i) => (
           <SwiperSlide className={s.swiperSlide} key={i}>
-            {/* <div className={s.imgContainer}> */}
               <img
                 src={screen}
                 alt="project screenshot"
                 className={s.image}
               />
-            {/* </div> */}
           </SwiperSlide>
         ))}
       </Swiper>
