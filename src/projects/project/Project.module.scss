@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     margin: 10px 50px 10px 50px;
     @media only screen and (max-width: 550px) and (min-width: 0px) {
@@ -54,6 +55,7 @@
 
             h3 {
                 display: block;
+                text-align: center;
             }
             .githubIcon {
                 display: block;
