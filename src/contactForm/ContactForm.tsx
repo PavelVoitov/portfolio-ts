@@ -54,7 +54,6 @@ export const ContactForm = () => {
 		},
 
 		onSubmit: values => {
-			console.log("submit!!!!!!!!!!!!!!")	
 			const serviceId: string = process.env.REACT_APP_SERVICE_ID ?? "";
 			const templateId: string = process.env.REACT_APP_TEMPLATE_ID ?? "";
 			setDisableButton(true)
