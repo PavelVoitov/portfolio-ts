@@ -33,6 +33,5 @@ export const Header = ({changeLanguage}: Props) => {
 				</div>
 			</div>
 		</div>
-
 	)
 }
