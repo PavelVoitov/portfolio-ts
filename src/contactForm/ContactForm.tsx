@@ -54,6 +54,7 @@ export const ContactForm = () => {
 		},
 
 		onSubmit: values => {
+			console.log("submit!!!!!!!!!!!!!!")	
 			const serviceId: string = process.env.REACT_APP_SERVICE_ID ?? "";
 			const templateId: string = process.env.REACT_APP_TEMPLATE_ID ?? "";
 			setDisableButton(true)
@@ -124,7 +125,7 @@ export const ContactForm = () => {
 								className={formik.errors.message && formik.touched.message ? s.error : ''}
 							/>
 						</>
-						<Button title={t('send')} disable={disableButton} type={"default"}/>
+						<Button title={t('send')} disable={disableButton} type={"default"} htmlType="submit"/>
 					</form>
 				</div>
 			</div>

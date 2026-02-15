@@ -52,9 +52,9 @@ export const BurgerNav = () => {
 			<div onClick={onClickBurgerMenu}
 					 className={!isOpenMenu ? s.burgerBtn : `${s.burgerBtn} ${s.change}`}
 			>
-				<div className={s.bar1}></div>
-				<div className={s.bar2}></div>
-				<div className={s.bar3}></div>
+				<div className={s.bar1}/>
+				<div className={s.bar2}/>
+				<div className={s.bar3}/>
 			</div>
 		</div>
 	)
