@@ -14,6 +14,14 @@
   "creator": "Created by Pavel Voitov",
   "conditions": "I am considering options for remote work and relocation anywhere in the world",
   "link": "Link",
+  "formErrors": {
+    "nameRequired": "Field \"Name\" is required!",
+    "nameLength": "Your name must be between 3 and 100 characters",
+    "emailRequired": "Field \"Email\" is required!",
+    "emailInvalid": "Invalid email address",
+    "messageRequired": "Field \"Message\" is required!",
+    "messageLength": "Your message must be between 5 and 300 characters"
+  },
   "JAVASCRIPT": {
     "description": "Data types. Cycles, conditions, work with objects. Functions. Prototypes and inheritance. Working with objects. Array methods. Promises."
   },

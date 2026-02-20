@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useCallback, useRef, useState} from "react";
 import styleContainer from '../common/styles/Container.module.scss'
 import s from './ContactForm.module.scss'
 import {Button} from "../common/components/button/Button";
@@ -7,6 +7,9 @@ import {Modal} from "../common/components/modal/Modal";
 import {useFormik} from "formik";
 import emailjs from '@emailjs/browser';
 import {useTranslation} from "react-i18next";
+import { loadFull } from "tsparticles";
+import { Particles } from "react-tsparticles";
+import { cosmicParticlesOptions } from "../common/particlesCosmicConfig";
 
 type FormikErrorType = {
 	name?: string
@@ -21,6 +24,10 @@ export const ContactForm = () => {
 	const [error, setError] = useState<boolean>(false)
 
 	const form = useRef<any>()
+	const initParticles = useCallback(async (engine: unknown) => {
+		await loadFull(engine as Parameters<typeof loadFull>[0])
+	}, [])
+
 	const modalClosed = () => {
 		setIsOpenModal(false)
 		setDisableButton(false)
@@ -36,19 +43,19 @@ export const ContactForm = () => {
 		validate: (values) => {
 			const errors: FormikErrorType = {}
 			if (!values.name) {
-				errors.name = 'Field "Name" is required!'
+				errors.name = t('formErrors.nameRequired')
 			} else if (values.name.length < 3 || values.name.length > 100) {
-				errors.name = 'Your name must be between 3 and 100 characters'
+				errors.name = t('formErrors.nameLength')
 			}
 			if (!values.email) {
-				errors.email = 'Field "Email" is required!'
+				errors.email = t('formErrors.emailRequired')
 			} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-				errors.email = 'Invalid email address'
+				errors.email = t('formErrors.emailInvalid')
 			}
 			if (!values.message) {
-				errors.message = 'Field "Message" is required!'
+				errors.message = t('formErrors.messageRequired')
 			} else if (values.message.length < 5 || values.message.length > 300) {
-				errors.message = 'Your message must be between 5 and 500 characters'
+				errors.message = t('formErrors.messageLength')
 			}
 			return errors
 		},
@@ -87,6 +94,9 @@ export const ContactForm = () => {
 
 	return (
 		<div id={'contactForm'} className={s.contactsBlock}>
+			<div className={s.particlesWrapper}>
+				<Particles options={cosmicParticlesOptions} init={initParticles} />
+			</div>
 			<div className={`${styleContainer.container} ${s.contactsContainer}`}>
 				{isOpenModal ? <Modal handleClose={handleClose} error={error}/> : ''}
 				<Title title={t('contacts')}/>

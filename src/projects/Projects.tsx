@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import s from './Projects.module.scss'
 import { Project } from "./project/Project"
 import styleContainer from "../common/styles/Container.module.scss"
@@ -9,6 +9,9 @@ import "../../src/common/styles/carousel.css";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import { ModalCarousel } from "../modalCarousel/ModalCarousel";
 import { useTranslation } from "react-i18next";
+import { loadFull } from "tsparticles";
+import { Particles } from "react-tsparticles";
+import { cosmicParticlesOptions } from "../common/particlesCosmicConfig";
 
 const responsive = {
     0: { items: 1 },
@@ -20,6 +23,10 @@ export const Projects = () => {
     const { t } = useTranslation()
     const [isOpenModal, setIsOpenModal] = useState<boolean>(false)
     const [screenshots, setScreenshots] = useState<[] | string[]>([])
+    const initParticles = useCallback(async (engine: unknown) => {
+        await loadFull(engine as Parameters<typeof loadFull>[0])
+    }, [])
+
     const handleOpenModal = (screenshots: string[]) => {
         setScreenshots(screenshots)
         setIsOpenModal(true)
@@ -31,9 +38,12 @@ export const Projects = () => {
     }
     return (
         <div id={'projects'} className={s.projectsBlock}>
+            <div className={s.particlesWrapper}>
+                <Particles options={cosmicParticlesOptions} init={initParticles} />
+            </div>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 {isOpenModal && <ModalCarousel handleCloseModal={handleCloseModal} screenshots={screenshots}/>}
-                <Title title={t('projects')}/>
+                <Title title={t('projects')} />
                 <div className={s.projects}>
                     <AliceCarousel
                         controlsStrategy={"alternate"}

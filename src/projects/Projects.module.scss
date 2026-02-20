@@ -2,13 +2,61 @@
 
 .projectsBlock {
   height: 100%;
-  background-color: $bgColor;
+  overflow: hidden;
   color: $primaryColor;
+  background: linear-gradient(
+    135deg,
+    #0a0a0a 0%,
+    #0c0016 25%,
+    #0a0a0a 50%,
+    #001224 75%,
+    #0a0a0a 100%
+  );
+  background-size: 400% 400%;
+  animation: cosmicGradient 20s ease infinite;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 211, 188, 0.05) 0%,
+      transparent 50%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  @keyframes cosmicGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .particlesWrapper {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: "transparent";
+  }
 
   .projectsContainer {
-    position: relative;
     flex-direction: column;
-    justify-content: flex-start;
     flex-wrap: wrap;
 
     .projects {

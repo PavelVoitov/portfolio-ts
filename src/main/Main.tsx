@@ -19,30 +19,106 @@ export const Main = () => {
     return (
         <div id={'main'} className={s.mainBlock}>
             <Particles options={{
+                background: {
+                    color: {
+                        //value: "#0a0a0a",
+                        value: "transparent"
+                    },
+                },
+                fpsLimit: 120,
                 particles: {
                     color: {
-                        value: '#fff'
+                        value: [
+                            "#00d3bc", // Primary cyan
+                            "#ffffff", // Bright stars
+                            "#9d4edd", // Purple nebula
+                            "#4cc9f0", // Blue stars
+                            "#7209b7", // Deep purple
+                            "#b5179e", // Magenta
+                        ],
                     },
                     number: {
-                        value: 100,
+                        value: 150,
+                        density: {
+                            enable: true,
+                            area: 800,
+                        },
                     },
                     opacity: {
-                        value: { min: 0.3, max: 0.8 }
+                        value: { min: 0.1, max: 1 },
+                        animation: {
+                            enable: true,
+                            speed: 0.5,
+                            sync: false,
+                            minimumValue: 0.1,
+                        },
                     },
                     shape: {
-                        type: 'edge'
+                        type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 2 }
+                        value: { min: 0.5, max: 3 },
+                        animation: {
+                            enable: true,
+                            speed: 2,
+                            minimumValue: 0.5,
+                            sync: false,
+                        },
+                    },
+                    links: {
+                        enable: true,
+                        distance: 150,
+                        color: {
+                            value: "#00d3bc",
+                        },
+                        opacity: 0.2,
+                        width: 1,
                     },
                     move: {
-                        direction: 'none',
                         enable: true,
-                        speed: { min: 0.2, max: 0.5 },
-                        straight: false
+                        speed: { min: 0.1, max: 0.3 },
+                        direction: "none",
+                        random: true,
+                        straight: false,
+                        outModes: {
+                            default: "out",
+                        },
+                        attract: {
+                            enable: false,
+                        },
                     },
-                    detectRetina: true,
-                }
+                    twinkle: {
+                        particles: {
+                            enable: true,
+                            frequency: 0.05,
+                            opacity: 1,
+                        },
+                    },
+                },
+                interactivity: {
+                    detectsOn: "canvas",
+                    events: {
+                        onHover: {
+                            enable: true,
+                            mode: "repulse",
+                        },
+                        onClick: {
+                            enable: true,
+                            mode: "push",
+                        },
+                        resize: true,
+                    },
+                    modes: {
+                        repulse: {
+                            distance: 100,
+                            duration: 0.4,
+                        },
+                        push: {
+                            quantity: 4,
+                        },
+                    },
+                },
+                detectRetina: true,
             }} init={init}/>
             <div className={styleContainer.container}>
                 <div className={s.mainText}>
