@@ -52,17 +52,101 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
+            gap: 10px;
 
             h3 {
                 display: block;
                 text-align: center;
             }
+            .iconsContainer {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
             .githubIcon {
                 display: block;
                 width: 23px;
-                margin-left: 10px;
                 img {
                     object-fit: fill;
+                }
+            }
+            .tooltipContainer {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                
+                .stackIcon {
+                    font-size: 20px;
+                    color: $textColor;
+                    transition: color 0.3s ease, transform 0.3s ease;
+                    
+                    &:hover {
+                        color: $primaryColor;
+                        transform: scale(1.1);
+                    }
+                }
+                
+                .tooltip {
+                    visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+                    bottom: 125%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: rgba(0, 0, 0, 0.9);
+                    color: #fff;
+                    padding: 12px 16px;
+                    border-radius: 8px;
+                    white-space: nowrap;
+                    z-index: 1000;
+                    min-width: 200px;
+                    max-width: 300px;
+                    white-space: normal;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                    transition: opacity 0.3s ease, visibility 0.3s ease;
+                    pointer-events: none;
+                    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-width: 6px;
+                        border-style: solid;
+                        border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+                    }
+                    
+                    .tooltipTitle {
+                        font-weight: 600;
+                        margin-bottom: 8px;
+                        font-size: 14px;
+                        color: $primaryColor;
+                    }
+                    
+                    .tooltipContent {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 4px;
+                        font-size: 13px;
+                        line-height: 1.5;
+                        
+                        .techItem {
+                            display: inline-flex;
+                            align-items: center;
+                            
+                            .separator {
+                                margin: 0 4px;
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                        }
+                    }
+                }
+                
+                &:hover .tooltip {
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
         }

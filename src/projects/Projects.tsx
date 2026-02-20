@@ -52,6 +52,7 @@ export const Projects = () => {
                                 codeLink={el.githubLink}
                                 sliderPhotos={el.sliderPhoto}
                                 handleOpenModal={handleOpenModal}
+                                stack={el.stack}
                             />
                         ))}
                     </AliceCarousel>

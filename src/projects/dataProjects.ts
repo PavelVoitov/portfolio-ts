@@ -3,6 +3,7 @@ import socialNetworkFon from "../../src/assets/images/socialnetworks.png";
 import cardsFon from "../../src/assets/images/cardsFon.png";
 import citriniumFon from "../../src/assets/images/citrinium.png";
 import peatCalculator from "../../src/assets/images/peat-calculator.png"
+import speedTime from "../../src/assets/images/speed-time.png"
 import stxlotty from "../../src/assets/images/stx-lotty.png"
 import agroCover from "../../src/assets/images/agroCover.png"
 import signIn from "../../src/assets/images/projects/cards/SignIn.png"
@@ -46,7 +47,20 @@ export const projects: Project[] = [
         platform: "web",
         img: agroCover,
         sliderPhoto: [agro1, agro2, agro3, agro4, agro5, agro6],
-        stack: ["Next.js", "TypeScript", "Redux", "MapLibre"],
+        stack: [
+			"Next.js",
+			"React",
+			"TypeScript",
+			"Redux",
+			"SCSS Modules",
+			"MapLibre GL",
+			"Recharts",
+			"i18next",
+			"Python",
+			"FlaskAPI",
+			"Airfrow",
+			"Docker"
+		],
         highlights: ["Field management", "Maps & layers", "Role-based access"],
         isNda: true,
     },
@@ -64,6 +78,18 @@ export const projects: Project[] = [
 			workSchemePeatCalculator,
 			hoppersPeatCalculator,
 			boxesPeatCalculator
+		],
+		stack: [
+			"React",
+			"TypeScript",
+			"Redux Toolkit",
+			"Formik",
+			"Yup",
+			"Material UI",
+			"Sass",
+			"Numeric.js",
+			"Storybook",
+			"Jest + Testing Library",
 		]
 	},
 	{
@@ -74,6 +100,17 @@ export const projects: Project[] = [
 		githubLink: '',
 		sliderPhoto: [],
         platform: "web",
+		stack: [
+			"Next.js",
+			"TypeScript",
+			"Tailwind CSS",
+			"Stacks wallet integration",
+			"Stacks Transactions",
+			"Stacks Network",
+			"Stacks Blockchain API Client",
+			"Axios",
+			"React-toastify",
+		]
 	},
 	{
 		id: "education-cards",
@@ -83,6 +120,33 @@ export const projects: Project[] = [
 		githubLink: '',
 		sliderPhoto: [signIn, signUp, profile, packs, cards, addCards],
         platform: "web",
+		stack: [
+			"React",
+			"TypeScript",
+			"Redux",
+			"Redux Thunk",
+			"React Router",
+			"Material UI",
+			"Styled-components",
+			"Formik",
+			"Axios",
+		  ],
+	},
+	{
+		id: "speed-time",
+		title: "Speed-Time",
+		img: speedTime,
+		siteLink: 'https://www.speed-time.ru/',
+		githubLink: '',
+		sliderPhoto: [],
+        platform: "web",
+		stack:  [ 
+			"Next.js",
+			"TypeScript",
+			"Supabase",
+			"SCSS",
+			"React-Bootstrap",
+	]
 	},
 	{
 		id: "citrinium",
@@ -92,5 +156,6 @@ export const projects: Project[] = [
 		githubLink: '',
 		sliderPhoto: [],
         platform: "web",
+		stack:  [ "HTML5", "CSS3", "JavaScript", "EmailJS" ]
 	},
 ]

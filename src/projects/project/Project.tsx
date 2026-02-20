@@ -3,6 +3,7 @@ import c from './Project.module.scss'
 import { Button } from "../../common/components/button/Button";
 import githubIcon from "../../assets/images/github-mark.png"
 import { useTranslation } from "react-i18next";
+import { FaCode } from "react-icons/fa";
 
 type Props = {
     title: string
@@ -12,6 +13,7 @@ type Props = {
     codeLink?: string
     sliderPhotos: string[]
     handleOpenModal: (sliderPhotos: string[]) => void
+    stack?: string[]
 }
 export const Project = ({
     title,
@@ -20,7 +22,8 @@ export const Project = ({
     siteLink,
     codeLink,
     sliderPhotos,
-    handleOpenModal
+    handleOpenModal,
+    stack
 }: Props) => {
     const { t } = useTranslation()
     const backgroundImage = {
@@ -53,16 +56,34 @@ export const Project = ({
             <div className={c.textBlock}>
                 <div className={c.titleAndIconBlock}>
                     <h3>{title}</h3>
-                    {codeLink && (
-                        <a
-                            href={codeLink}
-                            target={"_blank"}
-                            rel="noreferrer"
-                            title="Github"
-                        >
-                            <img src={githubIcon} alt="github icon" className={c.githubIcon}/>
-                        </a>
-                    )}
+                    <div className={c.iconsContainer}>
+                        {stack && stack.length > 0 && (
+                            <div className={c.tooltipContainer}>
+                                <FaCode className={c.stackIcon} />
+                                <div className={c.tooltip}>
+                                    <div className={c.tooltipTitle}>Tech Stack:</div>
+                                    <div className={c.tooltipContent}>
+                                        {stack.map((tech, index) => (
+                                            <span key={index} className={c.techItem}>
+                                                {tech}
+                                                {index < stack.length - 1 && <span className={c.separator}> • </span>}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {codeLink && (
+                            <a
+                                href={codeLink}
+                                target={"_blank"}
+                                rel="noreferrer"
+                                title="Github"
+                            >
+                                <img src={githubIcon} alt="github icon" className={c.githubIcon}/>
+                            </a>
+                        )}
+                    </div>
                 </div>
                 <div className={c.description}>
                     {description}

@@ -66,6 +66,7 @@
     "task-recorder": "An application for daily task management, providing the ability to create, plan, and edit tasks.",
     "citrinium": "Website for a dental clinic with a contact form and responsive design ensures convenient access to information and appointment booking on all devices.",
     "stxlotty": "STXLOTTY is a Web3 next-generation lottery platform that connects into the Stacks platform. It uses blockchain technology to allow decentralized operations with great gains, transparency, privacy and security.",
-    "agro-mng-web": "Internal web platform for agricultural field management: maps, layers, and operational workflows. NDA: no public link."
+    "agro-mng-web": "Internal web platform for agricultural field management: geospatial maps, satellite layers, analytics, and operational workflows.",
+    "speed-time": "Content publishing platform with an admin dashboard: post management, database storage via Supabase, and protected access using authentication and RLS policies."
   }
 }
