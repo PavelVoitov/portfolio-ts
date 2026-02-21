@@ -103,9 +103,13 @@
       border-radius: 10px;
       border-style: inset
     }
-    @media only screen and (max-width: 1516px) and (min-width: 680px) {
+    @media only screen and (min-width: 680px) {
       margin-left: auto;
       margin-right: auto;
+      img {
+        height: 770px;
+        width: 540px;
+      }
     }
     @media only screen and (max-width: 680px) and (min-width: 0px) {
       margin-left: auto;
