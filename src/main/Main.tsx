@@ -21,7 +21,6 @@ export const Main = () => {
             <Particles options={{
                 background: {
                     color: {
-                        //value: "#0a0a0a",
                         value: "transparent"
                     },
                 },

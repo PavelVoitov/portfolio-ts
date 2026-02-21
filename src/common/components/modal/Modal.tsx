@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Modal.module.scss'
 import {SuccessAnimation} from "./SuccessAnimation/SuccessAnimation";
 import failedIcon from "../../../assets/images/failed.png"
+import { useTranslation } from "react-i18next";
 
 type Props = {
   error?: boolean
@@ -9,6 +10,8 @@ type Props = {
 }
 
 export const Modal = ({handleClose, error}: Props) => {
+  const { t } = useTranslation();
+
   return (
     <section className={s.modal}>
       <div className={s.flex}>
@@ -16,14 +19,16 @@ export const Modal = ({handleClose, error}: Props) => {
       </div>
       <div className={s.textModalBlock}>
         <div>
-          <h3 className={error ? s.error : ''}>Your message {error && "didn't"} sent!</h3>
+          <h3 className={error ? s.error : ''}>
+            {error ? t('modal.titleError') : t('modal.titleSuccess')}
+          </h3>
         </div>
         <div className={s.modalMessage}>
           {error
-            ? "Please send me a message on any other social network or messenger"
-            : "Thank you! I will get back in touch with you soon!"}
+            ? t('modal.contactAlternative')
+            : t('modal.thankYou')}
           <div>
-            <b className={s.modalMessage}>Have a great day!</b>
+            <b className={s.modalMessage}>{t('modal.haveGreatDay')}</b>
           </div>
         </div>
         {error

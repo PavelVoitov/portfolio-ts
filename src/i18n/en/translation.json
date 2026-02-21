@@ -22,6 +22,13 @@
     "messageRequired": "Field \"Message\" is required!",
     "messageLength": "Your message must be between 5 and 300 characters"
   },
+  "modal": {
+    "titleSuccess": "Your message sent!",
+    "titleError": "Your message didn't sent!",
+    "thankYou": "Thank you! I will get back in touch with you soon!",
+    "contactAlternative": "Please send me a message on any other social network or messenger",
+    "haveGreatDay": "Have a great day!"
+  },
   "JAVASCRIPT": {
     "description": "Data types. Cycles, conditions, work with objects. Functions. Prototypes and inheritance. Working with objects. Array methods. Promises."
   },
