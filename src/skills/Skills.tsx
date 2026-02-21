@@ -28,11 +28,9 @@ export const Skills = () => {
 					disableDotsControls={true}
 					infinite={true}
 				>
-					{/*<div className={s.skills}>*/}
-						{skills.map(el => {
-							return <Skill key={el.title} title={el.title} description={t(`${el.title}.description`)} img={el.img}/>
-						})}
-					{/*</div>*/}
+					{skills.map(el => {
+						return <Skill key={el.title} title={el.title} description={t(`${el.title}.description`)} img={el.img}/>
+					})}
 				</AliceCarousel>
 
 		</div>

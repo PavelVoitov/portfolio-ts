@@ -54,15 +54,24 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 10px 10px;
 
             h3 {
-                display: block;
+                display: inline-block;
                 text-align: center;
+                margin: 0;
+                white-space: wrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                min-width: 0;
             }
             .iconsContainer {
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                flex: 0 0 auto;
             }
             .githubIcon {
                 display: block;
@@ -73,7 +82,9 @@
             }
             .tooltipContainer {
                 position: relative;
-                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 cursor: pointer;
                 
                 .stackIcon {
